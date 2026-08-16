@@ -1,0 +1,4 @@
+br\edu\sudoku\BacktrackingSolverTest.class
+br\edu\sudoku\SolverComparisonTest.class
+br\edu\sudoku\SudokuValidatorTest.class
+br\edu\sudoku\BranchAndBoundSolverTest.class

@@ -1,0 +1,13 @@
+br\edu\sudoku\solver\DynamicProgrammingSolver.class
+br\edu\sudoku\model\SudokuBoard.class
+br\edu\sudoku\heuristics\VariableOrderingHeuristic.class
+br\edu\sudoku\solver\BacktrackingSolver.class
+br\edu\sudoku\solver\SudokuSolver.class
+br\edu\sudoku\solver\GreedySolver.class
+br\edu\sudoku\io\SudokuWriter.class
+br\edu\sudoku\experiment\ExperimentRunner.class
+br\edu\sudoku\metrics\Metrics.class
+br\edu\sudoku\heuristics\MRVHeuristic.class
+br\edu\sudoku\solver\BranchAndBoundSolver.class
+br\edu\sudoku\io\SudokuReader.class
+br\edu\sudoku\utils\SudokuValidator.class

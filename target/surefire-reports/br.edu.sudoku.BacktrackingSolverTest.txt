@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: br.edu.sudoku.BacktrackingSolverTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 59.34 s -- in br.edu.sudoku.BacktrackingSolverTest

@@ -1,0 +1,1986 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="br.edu.sudoku.BranchAndBoundSolverTest" time="17.096" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="24"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\eduar\Documents\TAAL\sudoku-solver-taal\target\test-classes;C:\Users\eduar\Documents\TAAL\sudoku-solver-taal\target\classes;C:\Users\eduar\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\eduar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\eduar\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\eduar\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\eduar\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\eduar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\eduar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\eduar\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="24"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="C:\Users\eduar\.jdks\openjdk-24.0.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\eduar\AppData\Local\Temp\surefire16766884573690926495\surefirebooter-20260316100141425_3.jar C:\Users\eduar\AppData\Local\Temp\surefire16766884573690926495 2026-03-16T10-01-41_062-jvmRun1 surefire-20260316100141425_1tmp surefire_0-20260316100141425_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\eduar\Documents\TAAL\sudoku-solver-taal\target\test-classes;C:\Users\eduar\Documents\TAAL\sudoku-solver-taal\target\classes;C:\Users\eduar\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\eduar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\eduar\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\eduar\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\eduar\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\eduar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\eduar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\eduar\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\eduar"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="C:\Users\eduar\.jdks\openjdk-24.0.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\eduar\Documents\TAAL\sudoku-solver-taal"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\eduar\AppData\Local\Temp\surefire16766884573690926495\surefirebooter-20260316100141425_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="24.0.1+9-30"/>
+    <property name="user.name" value="eduar"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\eduar\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\eduar\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2025.1.1.1"/>
+    <property name="java.version" value="24.0.1"/>
+    <property name="user.dir" value="C:\Users\eduar\Documents\TAAL\sudoku-solver-taal"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\eduar\.jdks\openjdk-24.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\nodejs\;C:\Users\eduard\AppData\Local\Programs\Python\Python311\Scripts;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\apache-maven-3.9.13-bin\apache-maven-3.9.13\bin;C:\Users\eduar\AppData\Local\Microsoft\WindowsApps;C:\Users\eduar\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\eduar\AppData\Local\GitHubDesktop\bin;C:\Users\eduar\AppData\Roaming\npm;C:\Users\eduar\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\Scripts;C:\apache-maven-3.9.13-bin\apache-maven-3.9.13\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="24.0.1+9-30"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="68.0"/>
+  </properties>
+  <testcase name="testBranchAndBoundSolvesEasySudoku" classname="br.edu.sudoku.BranchAndBoundSolverTest" time="17.093">
+    <system-out><![CDATA[&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 1
+Tentando colocar 5 em (0,6)
+
++-------+-------+-------+
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m3&amp#27;[0m | &amp#27;[36m8&amp#27;[0m . . | 5 . . | 
+| &amp#27;[36m1&amp#27;[0m . . | &amp#27;[36m3&amp#27;[0m . . | &amp#27;[36m8&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m8&amp#27;[0m . . | &amp#27;[36m2&amp#27;[0m . . | . &amp#27;[36m3&amp#27;[0m . | 
++-------+-------+-------+
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m5&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m . . | 
++-------+-------+-------+
+| &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| &amp#27;[36m4&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 2
+Tentando colocar 9 em (2,6)
+
++-------+-------+-------+
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m3&amp#27;[0m | &amp#27;[36m8&amp#27;[0m . . | 5 . . | 
+| &amp#27;[36m1&amp#27;[0m . . | &amp#27;[36m3&amp#27;[0m . . | &amp#27;[36m8&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m8&amp#27;[0m . . | &amp#27;[36m2&amp#27;[0m . . | 9 &amp#27;[36m3&amp#27;[0m . | 
++-------+-------+-------+
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m5&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m . . | 
++-------+-------+-------+
+| &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| &amp#27;[36m4&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 3
+Tentando colocar 5 em (2,2)
+
++-------+-------+-------+
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m3&amp#27;[0m | &amp#27;[36m8&amp#27;[0m . . | 5 . . | 
+| &amp#27;[36m1&amp#27;[0m . . | &amp#27;[36m3&amp#27;[0m . . | &amp#27;[36m8&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m8&amp#27;[0m . 5 | &amp#27;[36m2&amp#27;[0m . . | 9 &amp#27;[36m3&amp#27;[0m . | 
++-------+-------+-------+
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m5&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m . . | 
++-------+-------+-------+
+| &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| &amp#27;[36m4&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 4
+Tentando colocar 9 em (1,2)
+
++-------+-------+-------+
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m3&amp#27;[0m | &amp#27;[36m8&amp#27;[0m . . | 5 . . | 
+| &amp#27;[36m1&amp#27;[0m . 9 | &amp#27;[36m3&amp#27;[0m . . | &amp#27;[36m8&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m8&amp#27;[0m . 5 | &amp#27;[36m2&amp#27;[0m . . | 9 &amp#27;[36m3&amp#27;[0m . | 
++-------+-------+-------+
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m5&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m . . | 
++-------+-------+-------+
+| &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| &amp#27;[36m4&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 5
+Tentando colocar 1 em (0,4)
+
++-------+-------+-------+
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m3&amp#27;[0m | &amp#27;[36m8&amp#27;[0m 1 . | 5 . . | 
+| &amp#27;[36m1&amp#27;[0m . 9 | &amp#27;[36m3&amp#27;[0m . . | &amp#27;[36m8&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m8&amp#27;[0m . 5 | &amp#27;[36m2&amp#27;[0m . . | 9 &amp#27;[36m3&amp#27;[0m . | 
++-------+-------+-------+
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m5&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m . . | 
++-------+-------+-------+
+| &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| &amp#27;[36m4&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 6
+Tentando colocar 7 em (2,4)
+
++-------+-------+-------+
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m3&amp#27;[0m | &amp#27;[36m8&amp#27;[0m 1 . | 5 . . | 
+| &amp#27;[36m1&amp#27;[0m . 9 | &amp#27;[36m3&amp#27;[0m . . | &amp#27;[36m8&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m8&amp#27;[0m . 5 | &amp#27;[36m2&amp#27;[0m 7 . | 9 &amp#27;[36m3&amp#27;[0m . | 
++-------+-------+-------+
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m5&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m . . | 
++-------+-------+-------+
+| &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| &amp#27;[36m4&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 7
+Tentando colocar 5 em (1,4)
+
++-------+-------+-------+
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m3&amp#27;[0m | &amp#27;[36m8&amp#27;[0m 1 . | 5 . . | 
+| &amp#27;[36m1&amp#27;[0m . 9 | &amp#27;[36m3&amp#27;[0m 5 . | &amp#27;[36m8&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m8&amp#27;[0m . 5 | &amp#27;[36m2&amp#27;[0m 7 . | 9 &amp#27;[36m3&amp#27;[0m . | 
++-------+-------+-------+
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m5&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m . . | 
++-------+-------+-------+
+| &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| &amp#27;[36m4&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 8
+Tentando colocar 6 em (0,7)
+
++-------+-------+-------+
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m3&amp#27;[0m | &amp#27;[36m8&amp#27;[0m 1 . | 5 6 . | 
+| &amp#27;[36m1&amp#27;[0m . 9 | &amp#27;[36m3&amp#27;[0m 5 . | &amp#27;[36m8&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m8&amp#27;[0m . 5 | &amp#27;[36m2&amp#27;[0m 7 . | 9 &amp#27;[36m3&amp#27;[0m . | 
++-------+-------+-------+
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m5&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m . . | 
++-------+-------+-------+
+| &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| &amp#27;[36m4&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 9
+Tentando colocar 4 em (0,8)
+
++-------+-------+-------+
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m3&amp#27;[0m | &amp#27;[36m8&amp#27;[0m 1 . | 5 6 4 | 
+| &amp#27;[36m1&amp#27;[0m . 9 | &amp#27;[36m3&amp#27;[0m 5 . | &amp#27;[36m8&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m8&amp#27;[0m . 5 | &amp#27;[36m2&amp#27;[0m 7 . | 9 &amp#27;[36m3&amp#27;[0m . | 
++-------+-------+-------+
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m5&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m . . | 
++-------+-------+-------+
+| &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| &amp#27;[36m4&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 10
+Tentando colocar 7 em (0,1)
+
++-------+-------+-------+
+| &amp#27;[36m2&amp#27;[0m 7 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m8&amp#27;[0m 1 . | 5 6 4 | 
+| &amp#27;[36m1&amp#27;[0m . 9 | &amp#27;[36m3&amp#27;[0m 5 . | &amp#27;[36m8&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m8&amp#27;[0m . 5 | &amp#27;[36m2&amp#27;[0m 7 . | 9 &amp#27;[36m3&amp#27;[0m . | 
++-------+-------+-------+
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m5&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m . . | 
++-------+-------+-------+
+| &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| &amp#27;[36m4&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 11
+Tentando colocar 9 em (0,5)
+
++-------+-------+-------+
+| &amp#27;[36m2&amp#27;[0m 7 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m8&amp#27;[0m 1 9 | 5 6 4 | 
+| &amp#27;[36m1&amp#27;[0m . 9 | &amp#27;[36m3&amp#27;[0m 5 . | &amp#27;[36m8&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m8&amp#27;[0m . 5 | &amp#27;[36m2&amp#27;[0m 7 . | 9 &amp#27;[36m3&amp#27;[0m . | 
++-------+-------+-------+
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m5&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m . . | 
++-------+-------+-------+
+| &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| &amp#27;[36m4&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 12
+Tentando colocar 7 em (1,7)
+
++-------+-------+-------+
+| &amp#27;[36m2&amp#27;[0m 7 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m8&amp#27;[0m 1 9 | 5 6 4 | 
+| &amp#27;[36m1&amp#27;[0m . 9 | &amp#27;[36m3&amp#27;[0m 5 . | &amp#27;[36m8&amp#27;[0m 7 &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m8&amp#27;[0m . 5 | &amp#27;[36m2&amp#27;[0m 7 . | 9 &amp#27;[36m3&amp#27;[0m . | 
++-------+-------+-------+
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m5&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m . . | 
++-------+-------+-------+
+| &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| &amp#27;[36m4&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 13
+Tentando colocar 1 em (2,8)
+
++-------+-------+-------+
+| &amp#27;[36m2&amp#27;[0m 7 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m8&amp#27;[0m 1 9 | 5 6 4 | 
+| &amp#27;[36m1&amp#27;[0m . 9 | &amp#27;[36m3&amp#27;[0m 5 . | &amp#27;[36m8&amp#27;[0m 7 &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m8&amp#27;[0m . 5 | &amp#27;[36m2&amp#27;[0m 7 . | 9 &amp#27;[36m3&amp#27;[0m 1 | 
++-------+-------+-------+
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m5&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m . . | 
++-------+-------+-------+
+| &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| &amp#27;[36m4&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 14
+Tentando colocar 1 em (5,7)
+
++-------+-------+-------+
+| &amp#27;[36m2&amp#27;[0m 7 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m8&amp#27;[0m 1 9 | 5 6 4 | 
+| &amp#27;[36m1&amp#27;[0m . 9 | &amp#27;[36m3&amp#27;[0m 5 . | &amp#27;[36m8&amp#27;[0m 7 &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m8&amp#27;[0m . 5 | &amp#27;[36m2&amp#27;[0m 7 . | 9 &amp#27;[36m3&amp#27;[0m 1 | 
++-------+-------+-------+
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m5&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m 1 . | 
++-------+-------+-------+
+| &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| &amp#27;[36m4&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 15
+Tentando colocar 6 em (5,8)
+
++-------+-------+-------+
+| &amp#27;[36m2&amp#27;[0m 7 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m8&amp#27;[0m 1 9 | 5 6 4 | 
+| &amp#27;[36m1&amp#27;[0m . 9 | &amp#27;[36m3&amp#27;[0m 5 . | &amp#27;[36m8&amp#27;[0m 7 &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m8&amp#27;[0m . 5 | &amp#27;[36m2&amp#27;[0m 7 . | 9 &amp#27;[36m3&amp#27;[0m 1 | 
++-------+-------+-------+
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m5&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m 1 6 | 
++-------+-------+-------+
+| &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| &amp#27;[36m4&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 16
+Tentando colocar 4 em (1,1)
+
++-------+-------+-------+
+| &amp#27;[36m2&amp#27;[0m 7 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m8&amp#27;[0m 1 9 | 5 6 4 | 
+| &amp#27;[36m1&amp#27;[0m 4 9 | &amp#27;[36m3&amp#27;[0m 5 . | &amp#27;[36m8&amp#27;[0m 7 &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m8&amp#27;[0m . 5 | &amp#27;[36m2&amp#27;[0m 7 . | 9 &amp#27;[36m3&amp#27;[0m 1 | 
++-------+-------+-------+
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m5&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m 1 6 | 
++-------+-------+-------+
+| &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| &amp#27;[36m4&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 17
+Tentando colocar 6 em (1,5)
+
++-------+-------+-------+
+| &amp#27;[36m2&amp#27;[0m 7 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m8&amp#27;[0m 1 9 | 5 6 4 | 
+| &amp#27;[36m1&amp#27;[0m 4 9 | &amp#27;[36m3&amp#27;[0m 5 6 | &amp#27;[36m8&amp#27;[0m 7 &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m8&amp#27;[0m . 5 | &amp#27;[36m2&amp#27;[0m 7 . | 9 &amp#27;[36m3&amp#27;[0m 1 | 
++-------+-------+-------+
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m5&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m 1 6 | 
++-------+-------+-------+
+| &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| &amp#27;[36m4&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 18
+Tentando colocar 6 em (2,1)
+
++-------+-------+-------+
+| &amp#27;[36m2&amp#27;[0m 7 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m8&amp#27;[0m 1 9 | 5 6 4 | 
+| &amp#27;[36m1&amp#27;[0m 4 9 | &amp#27;[36m3&amp#27;[0m 5 6 | &amp#27;[36m8&amp#27;[0m 7 &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m8&amp#27;[0m 6 5 | &amp#27;[36m2&amp#27;[0m 7 . | 9 &amp#27;[36m3&amp#27;[0m 1 | 
++-------+-------+-------+
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m5&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m 1 6 | 
++-------+-------+-------+
+| &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| &amp#27;[36m4&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 19
+Tentando colocar 4 em (2,5)
+
++-------+-------+-------+
+| &amp#27;[36m2&amp#27;[0m 7 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m8&amp#27;[0m 1 9 | 5 6 4 | 
+| &amp#27;[36m1&amp#27;[0m 4 9 | &amp#27;[36m3&amp#27;[0m 5 6 | &amp#27;[36m8&amp#27;[0m 7 &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m8&amp#27;[0m 6 5 | &amp#27;[36m2&amp#27;[0m 7 4 | 9 &amp#27;[36m3&amp#27;[0m 1 | 
++-------+-------+-------+
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m5&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m 1 6 | 
++-------+-------+-------+
+| &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| &amp#27;[36m4&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m2&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 1
+Tentando colocar 7 em (5,2)
+
++-------+-------+-------+
+| . . . | . &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . . | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m . | . . . | . . . | 
+| . . &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | . &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| . . 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m . | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | . &amp#27;[36m9&amp#27;[0m . | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| . . . | . &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 2
+Tentando colocar 6 em (5,8)
+
++-------+-------+-------+
+| . . . | . &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . . | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m . | . . . | . . . | 
+| . . &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | . &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| . . 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | . &amp#27;[36m9&amp#27;[0m . | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| . . . | . &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 3
+Tentando colocar 4 em (6,5)
+
++-------+-------+-------+
+| . . . | . &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . . | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m . | . . . | . . . | 
+| . . &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | . &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| . . 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | . &amp#27;[36m9&amp#27;[0m 4 | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| . . . | . &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 4
+Tentando colocar 7 em (1,5)
+
++-------+-------+-------+
+| . . . | . &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . . | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m . | . . 7 | . . . | 
+| . . &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | . &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| . . 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | . &amp#27;[36m9&amp#27;[0m 4 | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| . . . | . &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 5
+Tentando colocar 3 em (6,3)
+
++-------+-------+-------+
+| . . . | . &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . . | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m . | . . 7 | . . . | 
+| . . &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | . &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| . . 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 3 &amp#27;[36m9&amp#27;[0m 4 | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| . . . | . &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 6
+Tentando colocar 2 em (7,3)
+
++-------+-------+-------+
+| . . . | . &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . . | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m . | . . 7 | . . . | 
+| . . &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | . &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| . . 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 3 &amp#27;[36m9&amp#27;[0m 4 | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| . . . | 2 &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 7
+Tentando colocar 1 em (8,8)
+
++-------+-------+-------+
+| . . . | . &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . . | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m . | . . 7 | . . . | 
+| . . &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | . &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| . . 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 3 &amp#27;[36m9&amp#27;[0m 4 | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| . . . | 2 &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m 1 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 8
+Tentando colocar 2 em (0,2)
+
++-------+-------+-------+
+| . . 2 | . &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . . | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m . | . . 7 | . . . | 
+| . . &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | . &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| . . 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 3 &amp#27;[36m9&amp#27;[0m 4 | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| . . . | 2 &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m 1 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 9
+Tentando colocar 9 em (0,7)
+
++-------+-------+-------+
+| . . 2 | . &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m 9 . | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m . | . . 7 | . . . | 
+| . . &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | . &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| . . 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 3 &amp#27;[36m9&amp#27;[0m 4 | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| . . . | 2 &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m 1 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 10
+Tentando colocar 4 em (0,3)
+
++-------+-------+-------+
+| . . 2 | 4 &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m 9 . | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m . | . . 7 | . . . | 
+| . . &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | . &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| . . 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 3 &amp#27;[36m9&amp#27;[0m 4 | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| . . . | 2 &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m 1 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 11
+Tentando colocar 5 em (0,8)
+
++-------+-------+-------+
+| . . 2 | 4 &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m 9 5 | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m . | . . 7 | . . . | 
+| . . &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | . &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| . . 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 3 &amp#27;[36m9&amp#27;[0m 4 | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| . . . | 2 &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m 1 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 12
+Tentando colocar 9 em (1,3)
+
++-------+-------+-------+
+| . . 2 | 4 &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m 9 5 | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m . | 9 . 7 | . . . | 
+| . . &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | . &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| . . 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 3 &amp#27;[36m9&amp#27;[0m 4 | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| . . . | 2 &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m 1 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 13
+Tentando colocar 2 em (1,7)
+
++-------+-------+-------+
+| . . 2 | 4 &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m 9 5 | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m . | 9 . 7 | . 2 . | 
+| . . &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | . &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| . . 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 3 &amp#27;[36m9&amp#27;[0m 4 | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| . . . | 2 &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m 1 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 14
+Tentando colocar 4 em (1,8)
+
++-------+-------+-------+
+| . . 2 | 4 &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m 9 5 | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m . | 9 . 7 | . 2 4 | 
+| . . &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | . &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| . . 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 3 &amp#27;[36m9&amp#27;[0m 4 | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| . . . | 2 &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m 1 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 15
+Tentando colocar 1 em (0,0)
+
++-------+-------+-------+
+| 1 . 2 | 4 &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m 9 5 | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m . | 9 . 7 | . 2 4 | 
+| . . &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | . &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| . . 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 3 &amp#27;[36m9&amp#27;[0m 4 | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| . . . | 2 &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m 1 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 16
+Tentando colocar 7 em (0,1)
+
++-------+-------+-------+
+| 1 7 2 | 4 &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m 9 5 | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m . | 9 . 7 | . 2 4 | 
+| . . &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | . &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| . . 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 3 &amp#27;[36m9&amp#27;[0m 4 | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| . . . | 2 &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m 1 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 17
+Tentando colocar 4 em (5,0)
+
++-------+-------+-------+
+| 1 7 2 | 4 &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m 9 5 | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m . | 9 . 7 | . 2 4 | 
+| . . &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | . &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| 4 . 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 3 &amp#27;[36m9&amp#27;[0m 4 | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| . . . | 2 &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m 1 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 18
+Tentando colocar 5 em (2,0)
+
++-------+-------+-------+
+| 1 7 2 | 4 &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m 9 5 | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m . | 9 . 7 | . 2 4 | 
+| 5 . &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | . &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| 4 . 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 3 &amp#27;[36m9&amp#27;[0m 4 | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| . . . | 2 &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m 1 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 19
+Tentando colocar 8 em (1,2)
+
++-------+-------+-------+
+| 1 7 2 | 4 &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m 9 5 | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m 8 | 9 . 7 | . 2 4 | 
+| 5 . &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | . &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| 4 . 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 3 &amp#27;[36m9&amp#27;[0m 4 | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| . . . | 2 &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m 1 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 20
+Tentando colocar 1 em (1,6)
+
++-------+-------+-------+
+| 1 7 2 | 4 &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m 9 5 | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m 8 | 9 . 7 | 1 2 4 | 
+| 5 . &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | . &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| 4 . 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 3 &amp#27;[36m9&amp#27;[0m 4 | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| . . . | 2 &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m 1 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 21
+Tentando colocar 5 em (1,4)
+
++-------+-------+-------+
+| 1 7 2 | 4 &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m 9 5 | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m 8 | 9 5 7 | 1 2 4 | 
+| 5 . &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | . &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| 4 . 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 3 &amp#27;[36m9&amp#27;[0m 4 | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| . . . | 2 &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m 1 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 22
+Tentando colocar 4 em (2,1)
+
++-------+-------+-------+
+| 1 7 2 | 4 &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m 9 5 | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m 8 | 9 5 7 | 1 2 4 | 
+| 5 4 &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | . &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| 4 . 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 3 &amp#27;[36m9&amp#27;[0m 4 | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| . . . | 2 &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m 1 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 23
+Tentando colocar 1 em (2,4)
+
++-------+-------+-------+
+| 1 7 2 | 4 &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m 9 5 | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m 8 | 9 5 7 | 1 2 4 | 
+| 5 4 &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m 1 &amp#27;[36m2&amp#27;[0m | . &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| 4 . 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 3 &amp#27;[36m9&amp#27;[0m 4 | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| . . . | 2 &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m 1 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 24
+Tentando colocar 8 em (2,6)
+
++-------+-------+-------+
+| 1 7 2 | 4 &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m 9 5 | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m 8 | 9 5 7 | 1 2 4 | 
+| 5 4 &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m 1 &amp#27;[36m2&amp#27;[0m | 8 &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| 4 . 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 3 &amp#27;[36m9&amp#27;[0m 4 | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| . . . | 2 &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m 1 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 25
+Tentando colocar 1 em (5,1)
+
++-------+-------+-------+
+| 1 7 2 | 4 &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m 9 5 | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m 8 | 9 5 7 | 1 2 4 | 
+| 5 4 &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m 1 &amp#27;[36m2&amp#27;[0m | 8 &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| 4 1 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 3 &amp#27;[36m9&amp#27;[0m 4 | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| . . . | 2 &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m 1 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 26
+Tentando colocar 7 em (7,0)
+
++-------+-------+-------+
+| 1 7 2 | 4 &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m 9 5 | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m 8 | 9 5 7 | 1 2 4 | 
+| 5 4 &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m 1 &amp#27;[36m2&amp#27;[0m | 8 &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| 4 1 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 3 &amp#27;[36m9&amp#27;[0m 4 | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| 7 . . | 2 &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m 1 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 27
+Tentando colocar 8 em (7,1)
+
++-------+-------+-------+
+| 1 7 2 | 4 &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m 9 5 | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m 8 | 9 5 7 | 1 2 4 | 
+| 5 4 &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m 1 &amp#27;[36m2&amp#27;[0m | 8 &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| 4 1 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 3 &amp#27;[36m9&amp#27;[0m 4 | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| 7 8 . | 2 &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m 1 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 28
+Tentando colocar 5 em (7,2)
+
++-------+-------+-------+
+| 1 7 2 | 4 &amp#27;[36m8&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m6&amp#27;[0m 9 5 | 
+| &amp#27;[36m3&amp#27;[0m &amp#27;[36m6&amp#27;[0m 8 | 9 5 7 | 1 2 4 | 
+| 5 4 &amp#27;[36m9&amp#27;[0m | &amp#27;[36m6&amp#27;[0m 1 &amp#27;[36m2&amp#27;[0m | 8 &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m | &amp#27;[36m1&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 
+| 4 1 7 | &amp#27;[36m8&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | &amp#27;[36m3&amp#27;[0m &amp#27;[36m5&amp#27;[0m 6 | 
++-------+-------+-------+
+| &amp#27;[36m6&amp#27;[0m &amp#27;[36m2&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 3 &amp#27;[36m9&amp#27;[0m 4 | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 
+| 7 8 5 | 2 &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m3&amp#27;[0m | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m | &amp#27;[36m2&amp#27;[0m &amp#27;[36m6&amp#27;[0m 1 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 1
+Tentando colocar 8 em (7,4)
+
++-------+-------+-------+
+| . &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m . &amp#27;[36m1&amp#27;[0m | 
+| . . &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | . . . | 
+| . . . | . &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . . | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . . . | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | . 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 2
+Tentando colocar 1 em (7,3)
+
++-------+-------+-------+
+| . &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m . &amp#27;[36m1&amp#27;[0m | 
+| . . &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | . . . | 
+| . . . | . &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . . | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . . . | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 3
+Tentando colocar 3 em (0,7)
+
++-------+-------+-------+
+| . &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| . . &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | . . . | 
+| . . . | . &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . . | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . . . | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 4
+Tentando colocar 4 em (0,0)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| . . &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | . . . | 
+| . . . | . &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . . | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . . . | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 5
+Tentando colocar 8 em (0,3)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| . . &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | . . . | 
+| . . . | . &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . . | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . . . | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 6
+Tentando colocar 3 em (1,3)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| . . &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | . . . | 
+| . . . | . &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . . | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . . . | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 7
+Tentando colocar 4 em (2,3)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| . . &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | . . . | 
+| . . . | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . . | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . . . | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 8
+Tentando colocar 5 em (1,0)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 . &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | . . . | 
+| . . . | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . . | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . . . | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 9
+Tentando colocar 2 em (1,1)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | . . . | 
+| . . . | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . . | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . . . | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 10
+Tentando colocar 8 em (1,6)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 . . | 
+| . . . | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . . | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . . . | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 11
+Tentando colocar 4 em (1,7)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 . | 
+| . . . | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . . | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . . . | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 12
+Tentando colocar 9 em (1,8)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| . . . | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . . | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . . . | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 13
+Tentando colocar 1 em (2,2)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| . . 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . . | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . . . | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 14
+Tentando colocar 3 em (5,2)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| . . 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . . . | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 15
+Tentando colocar 4 em (6,2)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| . . 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . . 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 16
+Tentando colocar 3 em (2,0)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 . 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . . 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 17
+Tentando colocar 8 em (2,1)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 8 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . . 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 18
+Tentando colocar 3 em (8,1)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 8 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . . 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 19
+Tentando colocar 1 em (6,1)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 8 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 20
+Tentando colocar 5 em (5,1)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 8 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 21
+Tentando colocar 6 em (5,8)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 8 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 22
+Tentando colocar 4 em (3,8)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 8 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . 4 | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 23
+Tentando colocar 9 em (3,1)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 8 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . 4 | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 24
+Tentando colocar 1 em (3,6)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 8 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 1 . 4 | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 25
+Tentando colocar 6 em (3,0)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 8 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| 6 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 1 . 4 | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 26
+Tentando colocar 2 em (3,7)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 8 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| 6 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 1 2 4 | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 27
+Tentando colocar 4 em (4,1)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 8 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| 6 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 1 2 4 | 
+| &amp#27;[36m7&amp#27;[0m 4 &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 28
+Tentando colocar 1 em (5,0)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 8 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| 6 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 1 2 4 | 
+| &amp#27;[36m7&amp#27;[0m 4 &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| 1 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 29
+Tentando colocar 8 em (6,0)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 8 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| 6 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 1 2 4 | 
+| &amp#27;[36m7&amp#27;[0m 4 &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| 1 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| 8 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 30
+Backtracking removendo 8 de (6,0)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 8 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| 6 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 1 2 4 | 
+| &amp#27;[36m7&amp#27;[0m 4 &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| 1 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 31
+Backtracking removendo 1 de (5,0)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 8 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| 6 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 1 2 4 | 
+| &amp#27;[36m7&amp#27;[0m 4 &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 32
+Backtracking removendo 4 de (4,1)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 8 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| 6 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 1 2 4 | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 33
+Backtracking removendo 2 de (3,7)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 8 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| 6 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 1 . 4 | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 34
+Backtracking removendo 6 de (3,0)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 8 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 1 . 4 | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 35
+Backtracking removendo 1 de (3,6)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 8 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . 4 | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 36
+Backtracking removendo 9 de (3,1)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 8 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . 4 | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 37
+Backtracking removendo 4 de (3,8)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 8 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 38
+Backtracking removendo 6 de (5,8)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 8 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 39
+Backtracking removendo 5 de (5,1)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 8 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 40
+Backtracking removendo 1 de (6,1)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 8 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . . 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 41
+Backtracking removendo 3 de (8,1)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 8 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . . 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 42
+Backtracking removendo 8 de (2,1)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 3 . 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . . 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 43
+Backtracking removendo 3 de (2,0)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| . . 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . . 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 44
+Tentando colocar 8 em (2,0)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 8 . 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . . 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 45
+Tentando colocar 3 em (2,1)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 8 3 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . . 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m . &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 46
+Tentando colocar 8 em (8,1)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 8 3 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . . 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 8 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 47
+Tentando colocar 1 em (6,1)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 8 3 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . . 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 8 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 48
+Tentando colocar 5 em (5,1)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 8 3 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m . | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 8 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 49
+Tentando colocar 6 em (5,8)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 8 3 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . . | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 8 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 50
+Tentando colocar 4 em (3,8)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 8 3 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . . &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . 4 | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 8 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 51
+Tentando colocar 9 em (3,1)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 8 3 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | . . 4 | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 8 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 52
+Tentando colocar 1 em (3,6)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 8 3 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| . 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 1 . 4 | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 8 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 53
+Tentando colocar 6 em (3,0)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 8 3 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| 6 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 1 . 4 | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 8 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 54
+Tentando colocar 2 em (3,7)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 8 3 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| 6 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 1 2 4 | 
+| &amp#27;[36m7&amp#27;[0m . &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 8 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 55
+Tentando colocar 4 em (4,1)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 8 3 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| 6 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 1 2 4 | 
+| &amp#27;[36m7&amp#27;[0m 4 &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| . 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 8 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 56
+Tentando colocar 1 em (5,0)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 8 3 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| 6 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 1 2 4 | 
+| &amp#27;[36m7&amp#27;[0m 4 &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| 1 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| . 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 8 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 57
+Tentando colocar 3 em (6,0)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 8 3 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| 6 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 1 2 4 | 
+| &amp#27;[36m7&amp#27;[0m 4 &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| 1 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| 3 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . . | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 8 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 58
+Tentando colocar 8 em (6,8)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 8 3 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| 6 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 1 2 4 | 
+| &amp#27;[36m7&amp#27;[0m 4 &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| 1 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| 3 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . 8 | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 8 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m . | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 59
+Tentando colocar 5 em (8,8)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 8 3 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| 6 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 1 2 4 | 
+| &amp#27;[36m7&amp#27;[0m 4 &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| 1 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| 3 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . 8 | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 8 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | . &amp#27;[36m1&amp#27;[0m 5 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 60
+Tentando colocar 3 em (8,6)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 8 3 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | . . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| 6 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 1 2 4 | 
+| &amp#27;[36m7&amp#27;[0m 4 &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| 1 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| 3 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . 8 | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 8 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m1&amp#27;[0m 5 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 61
+Tentando colocar 5 em (2,6)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 8 3 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 5 . &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| 6 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 1 2 4 | 
+| &amp#27;[36m7&amp#27;[0m 4 &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| 1 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| 3 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . 8 | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 8 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m1&amp#27;[0m 5 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 62
+Tentando colocar 6 em (2,7)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 8 3 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 5 6 &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| 6 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 1 2 4 | 
+| &amp#27;[36m7&amp#27;[0m 4 &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | . . &amp#27;[36m3&amp#27;[0m | 
+| 1 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| 3 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . 8 | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 8 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m1&amp#27;[0m 5 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 63
+Tentando colocar 9 em (4,6)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 8 3 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 5 6 &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| 6 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 1 2 4 | 
+| &amp#27;[36m7&amp#27;[0m 4 &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 9 . &amp#27;[36m3&amp#27;[0m | 
+| 1 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| 3 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . 8 | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 8 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m1&amp#27;[0m 5 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 64
+Tentando colocar 5 em (4,7)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 8 3 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 5 6 &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| 6 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 1 2 4 | 
+| &amp#27;[36m7&amp#27;[0m 4 &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 9 5 &amp#27;[36m3&amp#27;[0m | 
+| 1 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| 3 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | . . 8 | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 8 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m1&amp#27;[0m 5 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 65
+Tentando colocar 6 em (6,6)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 8 3 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 5 6 &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| 6 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 1 2 4 | 
+| &amp#27;[36m7&amp#27;[0m 4 &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 9 5 &amp#27;[36m3&amp#27;[0m | 
+| 1 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| 3 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 6 . 8 | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 8 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m1&amp#27;[0m 5 | 
++-------+-------+-------+
+&amp#27;[H&amp#27;[2J=== Sudoku Solver (Branch and Bound) ===
+Passo: 66
+Tentando colocar 9 em (6,7)
+
++-------+-------+-------+
+| 4 &amp#27;[36m7&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 8 &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | &amp#27;[36m2&amp#27;[0m 3 &amp#27;[36m1&amp#27;[0m | 
+| 5 2 &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m7&amp#27;[0m &amp#27;[36m1&amp#27;[0m | 8 4 9 | 
+| 8 3 1 | 4 &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m | 5 6 &amp#27;[36m7&amp#27;[0m | 
++-------+-------+-------+
+| 6 9 &amp#27;[36m8&amp#27;[0m | &amp#27;[36m5&amp#27;[0m &amp#27;[36m3&amp#27;[0m &amp#27;[36m7&amp#27;[0m | 1 2 4 | 
+| &amp#27;[36m7&amp#27;[0m 4 &amp#27;[36m2&amp#27;[0m | &amp#27;[36m6&amp#27;[0m &amp#27;[36m1&amp#27;[0m &amp#27;[36m8&amp#27;[0m | 9 5 &amp#27;[36m3&amp#27;[0m | 
+| 1 5 3 | &amp#27;[36m2&amp#27;[0m &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m | &amp#27;[36m7&amp#27;[0m &amp#27;[36m8&amp#27;[0m 6 | 
++-------+-------+-------+
+| 3 1 4 | &amp#27;[36m7&amp#27;[0m &amp#27;[36m5&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 6 9 8 | 
+| &amp#27;[36m9&amp#27;[0m &amp#27;[36m6&amp#27;[0m &amp#27;[36m5&amp#27;[0m | 1 8 &amp#27;[36m3&amp#27;[0m | &amp#27;[36m4&amp#27;[0m &amp#27;[36m7&amp#27;[0m &amp#27;[36m2&amp#27;[0m | 
+| &amp#27;[36m2&amp#27;[0m 8 &amp#27;[36m7&amp#27;[0m | &amp#27;[36m9&amp#27;[0m &amp#27;[36m4&amp#27;[0m &amp#27;[36m6&amp#27;[0m | 3 &amp#27;[36m1&amp#27;[0m 5 | 
++-------+-------+-------+
+]]></system-out>
+  </testcase>
+</testsuite>
