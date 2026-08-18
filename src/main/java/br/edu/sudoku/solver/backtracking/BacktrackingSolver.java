@@ -34,13 +34,19 @@ public class BacktrackingSolver implements BacktrackingAlgorithm {
 
     @Override
     public boolean solve(SudokuBoard tabuleiro, Metrics metricas) {
-        return backtrack(tabuleiro, metricas);
+        return backtrack(tabuleiro, metricas, 0);
     }
 
     @Override
     public boolean backtrack(SudokuBoard tabuleiro, Metrics metricas) {
+        return backtrack(tabuleiro, metricas, 0);
+    }
+
+    private boolean backtrack(SudokuBoard tabuleiro, Metrics metricas, long currentDepth) {
 
         metricas.incrementVisitedNodes();
+        metricas.incrementRecursiveCalls();
+        metricas.updateMaxDepth(currentDepth);
 
         for (int linha = 0; linha < 9; linha++) {
             for (int coluna = 0; coluna < 9; coluna++) {
@@ -67,7 +73,7 @@ public class BacktrackingSolver implements BacktrackingAlgorithm {
                                 pausar();
                             }
 
-                            if (backtrack(tabuleiro, metricas)) {
+                            if (backtrack(tabuleiro, metricas, currentDepth + 1)) {
                                 return true;
                             }
 

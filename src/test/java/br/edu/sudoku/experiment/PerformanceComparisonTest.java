@@ -1,6 +1,7 @@
 package br.edu.sudoku.experiment;
 
 import br.edu.sudoku.TestUtils;
+import br.edu.sudoku.io.ResultsExporter;
 import br.edu.sudoku.io.SudokuReader;
 import br.edu.sudoku.metrics.Metrics;
 import br.edu.sudoku.model.SudokuBoard;
@@ -20,6 +21,9 @@ public class PerformanceComparisonTest {
         System.out.println("      COMPARACAO DE DESEMPENHO");
         System.out.println("==================================");
 
+        // Limpar CSV anterior para garantir que apenas dados desta execução sejam salvos
+        ResultsExporter.limparResultados();
+
         String[] dificuldades = {"facil", "medio", "dificil"};
 
         for (String dificuldade : dificuldades) {
@@ -32,36 +36,61 @@ public class PerformanceComparisonTest {
 
             executarExperimento(new BacktrackingSolver(false), "Backtracking",        dificuldade);
             executarExperimento(new BranchAndBoundSolver(false), "Branch and Bound",  dificuldade);
-            executarExperimento(new GreedySolver(),               "Greedy",            dificuldade);
+            executarExperimento(new GreedySolver(),   "Greedy",            dificuldade);
             executarExperimento(new DynamicProgrammingSolver(),   "Dynamic Programming", dificuldade);
         }
+
+        System.out.println("\n==================================");
+        System.out.println("RESULTADOS EXPORTADOS PARA CSV");
+        System.out.println("Localização: " + ResultsExporter.obterCaminhoCSV());
+        System.out.println("==================================");
     }
 
     private static void executarExperimento(SudokuSolver solver, String nome, String dificuldade) throws Exception {
 
         String caminho = TestUtils.caminhoParaDificuldade(dificuldade);
 
-        double[] tempos       = new double[EXECUCOES];
-        long[]   nosVisitados = new long[EXECUCOES];
-        long[]   backtracks   = new long[EXECUCOES];
+        double[] tempos              = new double[EXECUCOES];
+        long[]   nosVisitados        = new long[EXECUCOES];
+        long[]   backtracks          = new long[EXECUCOES];
+        long[]   memoriaBytesArray   = new long[EXECUCOES];
+        long[]   recursiveCallsArray = new long[EXECUCOES];
+        long[]   maxDepthArray       = new long[EXECUCOES];
 
         for (int i = 0; i < EXECUCOES; i++) {
             SudokuBoard tabuleiro = SudokuReader.read(caminho);
             Metrics metricas = new Metrics();
 
+            long memAntes = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
             long inicio = System.nanoTime();
+            
             solver.solve(tabuleiro, metricas);
+            
             long fim = System.nanoTime();
+            long memDepois = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
+            long memUsada = memDepois - memAntes;
+            metricas.setMemoryUsedBytes(memUsada);
 
-            tempos[i]       = (fim - inicio) / 1_000_000.0;
-            nosVisitados[i] = metricas.getVisitedNodes();
-            backtracks[i]   = metricas.getBacktracks();
+            tempos[i]              = (fim - inicio) / 1_000_000.0;
+            nosVisitados[i]        = metricas.getVisitedNodes();
+            backtracks[i]          = metricas.getBacktracks();
+            memoriaBytesArray[i]   = metricas.getMemoryUsedBytes();
+            recursiveCallsArray[i] = metricas.getRecursiveCalls();
+            maxDepthArray[i]       = metricas.getMaxDepth();
+
+            // Exportar cada execução para CSV
+            ResultsExporter.exportarResultado(nome, dificuldade, i + 1, tempos[i],
+                    memoriaBytesArray[i], nosVisitados[i], recursiveCallsArray[i],
+                    backtracks[i], maxDepthArray[i]);
         }
 
         double tempoMedio   = media(tempos);
         double desvioPadrao = desvio(tempos, tempoMedio);
         double mediaNos     = mediaLong(nosVisitados);
         double mediaBacks   = mediaLong(backtracks);
+        double mediaMemoria = mediaLong(memoriaBytesArray);
+        double mediaRecursive = mediaLong(recursiveCallsArray);
+        double mediaMaxDepth = mediaLong(maxDepthArray);
 
         System.out.println("\nAlgoritmo: " + nome);
         System.out.println("Execucoes: " + EXECUCOES);
@@ -69,6 +98,9 @@ public class PerformanceComparisonTest {
         System.out.printf("Desvio padrao:           %.3f ms%n", desvioPadrao);
         System.out.printf("Nos visitados (media):   %.0f%n",    mediaNos);
         System.out.printf("Backtracks (media):      %.0f%n",    mediaBacks);
+        System.out.printf("Memoria usada (media):   %.0f bytes%n", mediaMemoria);
+        System.out.printf("Chamadas recursivas (media): %.0f%n", mediaRecursive);
+        System.out.printf("Profundidade maxima (media): %.0f%n", mediaMaxDepth);
     }
 
     private static double media(double[] array) {

@@ -15,11 +15,13 @@ public class GreedySolver implements GreedyAlgorithm {
 
     @Override
     public boolean greedySolve(SudokuBoard tabuleiro, Metrics metricas) {
-        return buscaGulosa(tabuleiro, metricas);
+        return buscaGulosa(tabuleiro, metricas, 0);
     }
 
-    private boolean buscaGulosa(SudokuBoard tabuleiro, Metrics metricas) {
+    private boolean buscaGulosa(SudokuBoard tabuleiro, Metrics metricas, long currentDepth) {
         metricas.incrementVisitedNodes();
+        metricas.incrementRecursiveCalls();
+        metricas.updateMaxDepth(currentDepth);
 
         int[] celula = selecionarCelulaMaisRestrita(tabuleiro);
         if (celula == null) {
@@ -40,7 +42,7 @@ public class GreedySolver implements GreedyAlgorithm {
             int candidato = candidatosOrdenados[i];
             tabuleiro.set(linha, coluna, candidato);
 
-            if (buscaGulosa(tabuleiro, metricas)) {
+            if (buscaGulosa(tabuleiro, metricas, currentDepth + 1)) {
                 return true;
             }
 

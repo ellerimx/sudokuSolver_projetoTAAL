@@ -19,13 +19,15 @@ public class DynamicProgrammingSolver implements DynamicProgrammingAlgorithm {
     @Override
     public boolean dynamicSolve(SudokuBoard tabuleiro, Metrics metricas) {
         Set<String> estadosMortos = new HashSet<>();
-        return resolverComMemo(tabuleiro, metricas, estadosMortos);
+        return resolverComMemo(tabuleiro, metricas, estadosMortos, 0);
     }
 
-    private boolean resolverComMemo(SudokuBoard tabuleiro, Metrics metricas, Set<String> estadosMortos) {
+    private boolean resolverComMemo(SudokuBoard tabuleiro, Metrics metricas, Set<String> estadosMortos, long currentDepth) {
         metricas.incrementVisitedNodes();
+        metricas.incrementRecursiveCalls();
+        metricas.updateMaxDepth(currentDepth);
 
-        int[] celula = selecionarCelulaMaisRestrita(tabuleiro);
+        int[] celula = selecionarCelulaLinear(tabuleiro);
         if (celula == null) {
             return true;
         }
@@ -46,7 +48,7 @@ public class DynamicProgrammingSolver implements DynamicProgrammingAlgorithm {
 
             tabuleiro.set(linha, coluna, valor);
 
-            if (resolverComMemo(tabuleiro, metricas, estadosMortos)) {
+            if (resolverComMemo(tabuleiro, metricas, estadosMortos, currentDepth + 1)) {
                 return true;
             }
 
@@ -59,55 +61,20 @@ public class DynamicProgrammingSolver implements DynamicProgrammingAlgorithm {
     }
 
     /**
-     * Seleciona a celula vazia com menor dominio (MRV — Minimum Remaining Values).
-     * Reduz o espaco de busca ao atacar primeiro as celulas mais restritas.
+     * Seleciona a primeira célula vazia encontrada, percorrendo linha por linha.
+     * Ordem linear, sem heurística.
      *
-     * @return coordenadas [linha, coluna] da celula mais restrita, ou null se nao houver celulas vazias
+     * @return coordenadas [linha, coluna] da primeira célula vazia, ou null se não houver
      */
-    private int[] selecionarCelulaMaisRestrita(SudokuBoard tabuleiro) {
-        int melhorLinha  = -1;
-        int melhorColuna = -1;
-        int melhorDominio = Integer.MAX_VALUE;
-
+    private int[] selecionarCelulaLinear(SudokuBoard tabuleiro) {
         for (int linha = 0; linha < 9; linha++) {
             for (int coluna = 0; coluna < 9; coluna++) {
-                if (tabuleiro.get(linha, coluna) != 0) {
-                    continue;
-                }
-
-                int dominio = contarCandidatos(tabuleiro, linha, coluna);
-
-                if (dominio == 0) {
+                if (tabuleiro.get(linha, coluna) == 0) {
                     return new int[]{linha, coluna};
                 }
-
-                if (dominio < melhorDominio) {
-                    melhorDominio = dominio;
-                    melhorLinha   = linha;
-                    melhorColuna  = coluna;
-
-                    if (melhorDominio == 1) {
-                        return new int[]{melhorLinha, melhorColuna};
-                    }
-                }
             }
         }
-
-        if (melhorLinha == -1) {
-            return null;
-        }
-
-        return new int[]{melhorLinha, melhorColuna};
-    }
-
-    private int contarCandidatos(SudokuBoard tabuleiro, int linha, int coluna) {
-        int cont = 0;
-        for (int valor = 1; valor <= 9; valor++) {
-            if (SudokuValidator.isValid(tabuleiro, linha, coluna, valor)) {
-                cont++;
-            }
-        }
-        return cont;
+        return null;
     }
 
     /**

@@ -2,8 +2,6 @@
 
 package br.edu.sudoku.solver.branchandbound;
 
-import br.edu.sudoku.heuristics.MRVHeuristic;
-import br.edu.sudoku.heuristics.VariableOrderingHeuristic;
 import br.edu.sudoku.metrics.Metrics;
 import br.edu.sudoku.model.SudokuBoard;
 import br.edu.sudoku.utils.SudokuValidator;
@@ -11,7 +9,6 @@ import br.edu.sudoku.utils.SudokuValidator;
 public class BranchAndBoundSolver implements BranchAndBoundAlgorithm {
 
     private final boolean visualizar;
-    private final VariableOrderingHeuristic heuristica;
 
     private int passos;
     private int melhorBound;
@@ -22,7 +19,6 @@ public class BranchAndBoundSolver implements BranchAndBoundAlgorithm {
 
     public BranchAndBoundSolver(boolean visualizar) {
         this.visualizar = visualizar;
-        this.heuristica = new MRVHeuristic();
     }
 
     private String resolverRotuloDificuldade() {
@@ -47,13 +43,15 @@ public class BranchAndBoundSolver implements BranchAndBoundAlgorithm {
     public boolean branchAndBound(SudokuBoard tabuleiro, Metrics metricas) {
         passos = 0;
         melhorBound = Integer.MAX_VALUE;
-        return resolver(tabuleiro, metricas);
+        return resolver(tabuleiro, metricas, 0);
     }
 
-    private boolean resolver(SudokuBoard tabuleiro, Metrics metricas) {
+    private boolean resolver(SudokuBoard tabuleiro, Metrics metricas, long currentDepth) {
         metricas.incrementVisitedNodes();
+        metricas.incrementRecursiveCalls();
+        metricas.updateMaxDepth(currentDepth);
 
-        int[] celula = heuristica.selecionarCelula(tabuleiro);
+        int[] celula = selecionarCelulaLinear(tabuleiro);
         if (celula == null) {
             return true;
         }
@@ -88,7 +86,7 @@ public class BranchAndBoundSolver implements BranchAndBoundAlgorithm {
 
             melhorBound = bound;
 
-            if (resolver(tabuleiro, metricas)) {
+            if (resolver(tabuleiro, metricas, currentDepth + 1)) {
                 return true;
             }
 
@@ -99,6 +97,21 @@ public class BranchAndBoundSolver implements BranchAndBoundAlgorithm {
 
         metricas.incrementBacktracks();
         return false;
+    }
+
+    /**
+     * Seleciona a primeira célula vazia encontrada, percorrendo linha por linha.
+     * Ordem linear, sem heurística.
+     */
+    private int[] selecionarCelulaLinear(SudokuBoard tabuleiro) {
+        for (int linha = 0; linha < 9; linha++) {
+            for (int coluna = 0; coluna < 9; coluna++) {
+                if (tabuleiro.get(linha, coluna) == 0) {
+                    return new int[]{linha, coluna};
+                }
+            }
+        }
+        return null;
     }
 
     private int calcularBound(SudokuBoard tabuleiro) {

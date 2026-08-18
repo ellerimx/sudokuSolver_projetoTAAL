@@ -1,0 +1,121 @@
+algoritmo;dificuldade;execucao;tempo_ms;memoria_bytes;nos_visitados;chamadas_recursivas;backtracks;profundidade_maxima
+Backtracking;facil;1;1,514;0;70;70;50;19
+Backtracking;facil;2;0,447;0;70;70;50;19
+Backtracking;facil;3;0,146;0;70;70;50;19
+Backtracking;facil;4;0,081;0;70;70;50;19
+Backtracking;facil;5;0,081;0;70;70;50;19
+Backtracking;facil;6;0,153;0;70;70;50;19
+Backtracking;facil;7;0,116;0;70;70;50;19
+Backtracking;facil;8;0,052;0;70;70;50;19
+Backtracking;facil;9;0,126;0;70;70;50;19
+Backtracking;facil;10;0,043;0;70;70;50;19
+Branch and Bound;facil;1;0,704;0;32;32;22;19
+Branch and Bound;facil;2;0,464;0;32;32;22;19
+Branch and Bound;facil;3;1,864;0;32;32;22;19
+Branch and Bound;facil;4;0,271;0;32;32;22;19
+Branch and Bound;facil;5;0,278;0;32;32;22;19
+Branch and Bound;facil;6;0,230;0;32;32;22;19
+Branch and Bound;facil;7;0,247;0;32;32;22;19
+Branch and Bound;facil;8;0,709;0;32;32;22;19
+Branch and Bound;facil;9;0,310;0;32;32;22;19
+Branch and Bound;facil;10;0,116;0;32;32;22;19
+Algorithm X (Dancing Links);facil;1;5,974;0;82;82;0;81
+Algorithm X (Dancing Links);facil;2;2,181;0;82;82;0;81
+Algorithm X (Dancing Links);facil;3;0,344;0;82;82;0;81
+Algorithm X (Dancing Links);facil;4;0,570;537760;82;82;0;81
+Algorithm X (Dancing Links);facil;5;0,376;0;82;82;0;81
+Algorithm X (Dancing Links);facil;6;0,414;0;82;82;0;81
+Algorithm X (Dancing Links);facil;7;0,334;0;82;82;0;81
+Algorithm X (Dancing Links);facil;8;0,356;0;82;82;0;81
+Algorithm X (Dancing Links);facil;9;0,295;0;82;82;0;81
+Algorithm X (Dancing Links);facil;10;0,295;0;82;82;0;81
+Dynamic Programming;facil;1;1,130;0;70;70;50;19
+Dynamic Programming;facil;2;2,165;0;70;70;50;19
+Dynamic Programming;facil;3;0,167;0;70;70;50;19
+Dynamic Programming;facil;4;0,263;0;70;70;50;19
+Dynamic Programming;facil;5;0,894;0;70;70;50;19
+Dynamic Programming;facil;6;0,202;0;70;70;50;19
+Dynamic Programming;facil;7;0,207;0;70;70;50;19
+Dynamic Programming;facil;8;0,194;0;70;70;50;19
+Dynamic Programming;facil;9;0,159;0;70;70;50;19
+Dynamic Programming;facil;10;0,164;0;70;70;50;19
+Backtracking;medio;1;0,087;0;86;86;57;28
+Backtracking;medio;2;0,086;0;86;86;57;28
+Backtracking;medio;3;0,049;0;86;86;57;28
+Backtracking;medio;4;0,070;0;86;86;57;28
+Backtracking;medio;5;0,054;0;86;86;57;28
+Backtracking;medio;6;0,059;0;86;86;57;28
+Backtracking;medio;7;0,057;0;86;86;57;28
+Backtracking;medio;8;0,182;0;86;86;57;28
+Backtracking;medio;9;0,037;0;86;86;57;28
+Backtracking;medio;10;0,323;0;86;86;57;28
+Branch and Bound;medio;1;0,317;0;39;39;16;28
+Branch and Bound;medio;2;0,375;0;39;39;16;28
+Branch and Bound;medio;3;0,212;0;39;39;16;28
+Branch and Bound;medio;4;0,249;0;39;39;16;28
+Branch and Bound;medio;5;0,276;0;39;39;16;28
+Branch and Bound;medio;6;0,180;0;39;39;16;28
+Branch and Bound;medio;7;0,201;0;39;39;16;28
+Branch and Bound;medio;8;0,145;0;39;39;16;28
+Branch and Bound;medio;9;0,431;0;39;39;16;28
+Branch and Bound;medio;10;0,195;0;39;39;16;28
+Algorithm X (Dancing Links);medio;1;0,303;0;82;82;0;81
+Algorithm X (Dancing Links);medio;2;0,531;503368;82;82;0;81
+Algorithm X (Dancing Links);medio;3;0,308;0;82;82;0;81
+Algorithm X (Dancing Links);medio;4;0,303;0;82;82;0;81
+Algorithm X (Dancing Links);medio;5;0,385;503344;82;82;0;81
+Algorithm X (Dancing Links);medio;6;0,457;0;82;82;0;81
+Algorithm X (Dancing Links);medio;7;1,002;0;82;82;0;81
+Algorithm X (Dancing Links);medio;8;0,317;75584;82;82;0;81
+Algorithm X (Dancing Links);medio;9;0,310;503360;82;82;0;81
+Algorithm X (Dancing Links);medio;10;0,289;0;82;82;0;81
+Dynamic Programming;medio;1;0,382;0;86;86;57;28
+Dynamic Programming;medio;2;0,281;0;86;86;57;28
+Dynamic Programming;medio;3;0,223;503416;86;86;57;28
+Dynamic Programming;medio;4;0,229;0;86;86;57;28
+Dynamic Programming;medio;5;0,262;0;86;86;57;28
+Dynamic Programming;medio;6;0,199;0;86;86;57;28
+Dynamic Programming;medio;7;0,295;0;86;86;57;28
+Dynamic Programming;medio;8;0,249;0;86;86;57;28
+Dynamic Programming;medio;9;0,146;0;86;86;57;28
+Dynamic Programming;medio;10;0,352;0;86;86;57;28
+Backtracking;dificil;1;0,058;0;85;85;46;38
+Backtracking;dificil;2;0,029;0;85;85;46;38
+Backtracking;dificil;3;0,030;0;85;85;46;38
+Backtracking;dificil;4;0,029;0;85;85;46;38
+Backtracking;dificil;5;0,028;0;85;85;46;38
+Backtracking;dificil;6;0,027;0;85;85;46;38
+Backtracking;dificil;7;0,025;0;85;85;46;38
+Backtracking;dificil;8;0,022;0;85;85;46;38
+Backtracking;dificil;9;0,021;0;85;85;46;38
+Backtracking;dificil;10;0,018;0;85;85;46;38
+Branch and Bound;dificil;1;0,245;0;52;52;24;38
+Branch and Bound;dificil;2;0,286;0;52;52;24;38
+Branch and Bound;dificil;3;0,227;0;52;52;24;38
+Branch and Bound;dificil;4;0,344;0;52;52;24;38
+Branch and Bound;dificil;5;0,490;0;52;52;24;38
+Branch and Bound;dificil;6;0,345;0;52;52;24;38
+Branch and Bound;dificil;7;0,297;0;52;52;24;38
+Branch and Bound;dificil;8;0,401;0;52;52;24;38
+Branch and Bound;dificil;9;0,209;0;52;52;24;38
+Branch and Bound;dificil;10;0,233;0;52;52;24;38
+Algorithm X (Dancing Links);dificil;1;0,275;0;82;82;0;81
+Algorithm X (Dancing Links);dificil;2;0,287;503360;82;82;0;81
+Algorithm X (Dancing Links);dificil;3;0,290;0;82;82;0;81
+Algorithm X (Dancing Links);dificil;4;0,304;0;82;82;0;81
+Algorithm X (Dancing Links);dificil;5;0,272;503360;82;82;0;81
+Algorithm X (Dancing Links);dificil;6;0,294;0;82;82;0;81
+Algorithm X (Dancing Links);dificil;7;0,278;0;82;82;0;81
+Algorithm X (Dancing Links);dificil;8;0,292;503360;82;82;0;81
+Algorithm X (Dancing Links);dificil;9;0,219;0;82;82;0;81
+Algorithm X (Dancing Links);dificil;10;0,356;0;82;82;0;81
+Dynamic Programming;dificil;1;0,131;0;85;85;46;38
+Dynamic Programming;dificil;2;0,123;0;85;85;46;38
+Dynamic Programming;dificil;3;0,113;0;85;85;46;38
+Dynamic Programming;dificil;4;0,095;0;85;85;46;38
+Dynamic Programming;dificil;5;0,104;0;85;85;46;38
+Dynamic Programming;dificil;6;0,094;0;85;85;46;38
+Dynamic Programming;dificil;7;0,110;0;85;85;46;38
+Dynamic Programming;dificil;8;0,103;0;85;85;46;38
+Dynamic Programming;dificil;9;0,110;0;85;85;46;38
+Dynamic Programming;dificil;10;0,239;0;85;85;46;38

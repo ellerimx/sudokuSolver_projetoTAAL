@@ -46,7 +46,7 @@ public class ExperimentRunner {
 
             System.out.println("1 - Backtracking");
             System.out.println("2 - Branch and Bound");
-            System.out.println("3 - Guloso (Greedy)");
+            System.out.println("3 - Greedy");
             System.out.println("4 - Programação Dinâmica");
             System.out.println("0 - Sair");
 
@@ -173,11 +173,16 @@ public class ExperimentRunner {
                 System.setProperty("difficulty", nomeDificuldadeArquivo);
                 System.setProperty("sudoku.difficulty", nomeDificuldadeArquivo);
 
+                long memAntes = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
                 long inicio = System.currentTimeMillis();
 
                 boolean resolvido = solver.solve(tabuleiro, metricas);
 
                 long fim = System.currentTimeMillis();
+                long memDepois = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
+                long memUsada = memDepois - memAntes;
+                
+                metricas.setMemoryUsedBytes(memUsada);
 
                 if (resolvido) {
 
@@ -193,8 +198,11 @@ public class ExperimentRunner {
 
                     System.out.println("\n================ RESULTADOS ================");
                     System.out.println("Tempo de execução: " + (fim - inicio) + " ms");
+                    System.out.println("Memória usada: " + memUsada + " bytes");
                     System.out.println("Nós visitados: " + metricas.getVisitedNodes());
+                    System.out.println("Chamadas recursivas: " + metricas.getRecursiveCalls());
                     System.out.println("Backtracks: " + metricas.getBacktracks());
+                    System.out.println("Profundidade máxima: " + metricas.getMaxDepth());
                     System.out.println("============================================");
 
                 } else {
