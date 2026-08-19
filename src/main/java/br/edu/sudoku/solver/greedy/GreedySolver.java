@@ -23,13 +23,19 @@ public class GreedySolver implements GreedyAlgorithm {
         metricas.incrementRecursiveCalls();
         metricas.updateMaxDepth(currentDepth);
 
-        for (int linha = 0; linha < 9; linha++) {
-            for (int coluna = 0; coluna < 9; coluna++) {
+        if (metricas.isVisitLimitReached()) {
+            return false;
+        }
+
+        int size = tabuleiro.getSize();
+
+        for (int linha = 0; linha < size; linha++) {
+            for (int coluna = 0; coluna < size; coluna++) {
                 if (tabuleiro.get(linha, coluna) != 0) {
                     continue;
                 }
 
-                for (int valor = 1; valor <= 9; valor++) {
+                for (int valor = 1; valor <= size; valor++) {
                     if (SudokuValidator.isValid(tabuleiro, linha, coluna, valor)) {
                         tabuleiro.set(linha, coluna, valor);
                         return buscaGulosa(tabuleiro, metricas, currentDepth + 1);

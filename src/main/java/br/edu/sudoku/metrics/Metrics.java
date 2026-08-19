@@ -11,9 +11,21 @@ public class Metrics {
     private long maxDepth = 0;
     private long memoryUsedBytes = 0;
     private long recursiveCalls = 0;
+    private long maxVisitedNodes = Long.MAX_VALUE;
 
     public void incrementVisitedNodes() {
         visitedNodes++;
+    }
+
+    public void setMaxVisitedNodes(long maxVisitedNodes) {
+        if (maxVisitedNodes <= 0) {
+            throw new IllegalArgumentException("O limite de nós deve ser positivo.");
+        }
+        this.maxVisitedNodes = maxVisitedNodes;
+    }
+
+    public boolean isVisitLimitReached() {
+        return visitedNodes >= maxVisitedNodes;
     }
 
     public void incrementBacktracks() {

@@ -51,6 +51,10 @@ public class BranchAndBoundSolver implements BranchAndBoundAlgorithm {
         metricas.incrementRecursiveCalls();
         metricas.updateMaxDepth(currentDepth);
 
+        if (metricas.isVisitLimitReached()) {
+            return false;
+        }
+
         int[] celula = selecionarCelulaLinear(tabuleiro);
         if (celula == null) {
             return true;
@@ -104,8 +108,10 @@ public class BranchAndBoundSolver implements BranchAndBoundAlgorithm {
      * Ordem linear, sem heurística.
      */
     private int[] selecionarCelulaLinear(SudokuBoard tabuleiro) {
-        for (int linha = 0; linha < 9; linha++) {
-            for (int coluna = 0; coluna < 9; coluna++) {
+        int size = tabuleiro.getSize();
+
+        for (int linha = 0; linha < size; linha++) {
+            for (int coluna = 0; coluna < size; coluna++) {
                 if (tabuleiro.get(linha, coluna) == 0) {
                     return new int[]{linha, coluna};
                 }
@@ -115,9 +121,10 @@ public class BranchAndBoundSolver implements BranchAndBoundAlgorithm {
     }
 
     private int calcularBound(SudokuBoard tabuleiro) {
+        int size = tabuleiro.getSize();
         int celulasSemCandidatos = 0;
-        for (int l = 0; l < 9; l++) {
-            for (int c = 0; c < 9; c++) {
+        for (int l = 0; l < size; l++) {
+            for (int c = 0; c < size; c++) {
                 if (tabuleiro.get(l, c) == 0 && contarCandidatos(tabuleiro, l, c) == 0) {
                     celulasSemCandidatos++;
                 }
@@ -127,8 +134,9 @@ public class BranchAndBoundSolver implements BranchAndBoundAlgorithm {
     }
 
     private int contarCandidatos(SudokuBoard tabuleiro, int linha, int coluna) {
+        int size = tabuleiro.getSize();
         int cont = 0;
-        for (int numero = 1; numero <= 9; numero++) {
+        for (int numero = 1; numero <= size; numero++) {
             if (SudokuValidator.isValid(tabuleiro, linha, coluna, numero)) {
                 cont++;
             }
@@ -137,10 +145,11 @@ public class BranchAndBoundSolver implements BranchAndBoundAlgorithm {
     }
 
     private int[] obterCandidatos(SudokuBoard tabuleiro, int linha, int coluna) {
-        int[] candidatos = new int[10];
+        int size = tabuleiro.getSize();
+        int[] candidatos = new int[size + 1];
         int cont = 0;
 
-        for (int numero = 1; numero <= 9; numero++) {
+        for (int numero = 1; numero <= size; numero++) {
             if (SudokuValidator.isValid(tabuleiro, linha, coluna, numero)) {
                 cont++;
                 candidatos[cont] = numero;

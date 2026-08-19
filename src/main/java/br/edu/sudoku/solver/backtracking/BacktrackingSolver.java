@@ -48,12 +48,18 @@ public class BacktrackingSolver implements BacktrackingAlgorithm {
         metricas.incrementRecursiveCalls();
         metricas.updateMaxDepth(currentDepth);
 
-        for (int linha = 0; linha < 9; linha++) {
-            for (int coluna = 0; coluna < 9; coluna++) {
+        if (metricas.isVisitLimitReached()) {
+            return false;
+        }
+
+        int size = tabuleiro.getSize();
+
+        for (int linha = 0; linha < size; linha++) {
+            for (int coluna = 0; coluna < size; coluna++) {
 
                 if (tabuleiro.get(linha, coluna) == 0) {
 
-                    for (int numero = 1; numero <= 9; numero++) {
+                    for (int numero = 1; numero <= size; numero++) {
 
                         if (SudokuValidator.isValid(tabuleiro, linha, coluna, numero)) {
 

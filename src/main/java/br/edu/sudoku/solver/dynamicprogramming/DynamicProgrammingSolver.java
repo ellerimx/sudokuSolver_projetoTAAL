@@ -27,6 +27,10 @@ public class DynamicProgrammingSolver implements DynamicProgrammingAlgorithm {
         metricas.incrementRecursiveCalls();
         metricas.updateMaxDepth(currentDepth);
 
+        if (metricas.isVisitLimitReached()) {
+            return false;
+        }
+
         int[] celula = selecionarCelulaLinear(tabuleiro);
         if (celula == null) {
             return true;
@@ -41,7 +45,9 @@ public class DynamicProgrammingSolver implements DynamicProgrammingAlgorithm {
         int linha  = celula[0];
         int coluna = celula[1];
 
-        for (int valor = 1; valor <= 9; valor++) {
+        int size = tabuleiro.getSize();
+
+        for (int valor = 1; valor <= size; valor++) {
             if (!SudokuValidator.isValid(tabuleiro, linha, coluna, valor)) {
                 continue;
             }
@@ -67,8 +73,10 @@ public class DynamicProgrammingSolver implements DynamicProgrammingAlgorithm {
      * @return coordenadas [linha, coluna] da primeira célula vazia, ou null se não houver
      */
     private int[] selecionarCelulaLinear(SudokuBoard tabuleiro) {
-        for (int linha = 0; linha < 9; linha++) {
-            for (int coluna = 0; coluna < 9; coluna++) {
+        int size = tabuleiro.getSize();
+
+        for (int linha = 0; linha < size; linha++) {
+            for (int coluna = 0; coluna < size; coluna++) {
                 if (tabuleiro.get(linha, coluna) == 0) {
                     return new int[]{linha, coluna};
                 }
@@ -78,13 +86,15 @@ public class DynamicProgrammingSolver implements DynamicProgrammingAlgorithm {
     }
 
     /**
-     * Serializa o tabuleiro em uma string de 81 caracteres.
+    * Serializa o tabuleiro em uma string de tamanho N x N.
      * Usada como chave de memorizacao para identificar estados ja explorados.
      */
     private String serializar(SudokuBoard tabuleiro) {
-        StringBuilder sb = new StringBuilder(81);
-        for (int linha = 0; linha < 9; linha++) {
-            for (int coluna = 0; coluna < 9; coluna++) {
+        int size = tabuleiro.getSize();
+        StringBuilder sb = new StringBuilder(size * size);
+
+        for (int linha = 0; linha < size; linha++) {
+            for (int coluna = 0; coluna < size; coluna++) {
                 sb.append((char) ('0' + tabuleiro.get(linha, coluna)));
             }
         }
