@@ -1,5 +1,8 @@
 package br.edu.sudoku.experiment;
 
+import java.lang.management.ManagementFactory;
+import com.sun.management.ThreadMXBean;
+
 import br.edu.sudoku.TestUtils;
 import br.edu.sudoku.io.ResultsExporter;
 import br.edu.sudoku.io.SudokuReader;
@@ -9,12 +12,34 @@ import br.edu.sudoku.solver.SudokuSolver;
 import br.edu.sudoku.solver.backtracking.BacktrackingSolver;
 import br.edu.sudoku.solver.branchandbound.BranchAndBoundSolver;
 import br.edu.sudoku.solver.dynamicprogramming.DynamicProgrammingSolver;
-import br.edu.sudoku.solver.greedy.GreedySolver;
+
 
 public class PerformanceComparisonTest {
 
     private static final int EXECUCOES = 10;
     private static final long LIMITE_NOS_DIMENSOES_GRANDES = 100_000;
+
+    private static final ThreadMXBean THREAD_BEAN =
+    (ThreadMXBean) ManagementFactory.getThreadMXBean();
+
+    static {
+        if (THREAD_BEAN.isThreadAllocatedMemorySupported()
+                && !THREAD_BEAN.isThreadAllocatedMemoryEnabled()) {
+            THREAD_BEAN.setThreadAllocatedMemoryEnabled(true);
+        }
+    }
+
+private static long memoriaAlocada() {
+    if (THREAD_BEAN.isThreadAllocatedMemorySupported()
+            && THREAD_BEAN.isThreadAllocatedMemoryEnabled()) {
+
+        return THREAD_BEAN.getThreadAllocatedBytes(
+                Thread.currentThread().threadId()
+        );
+    }
+
+    return 0;
+}
 
     public static void main(String[] args) throws Exception {
 
@@ -51,7 +76,6 @@ public class PerformanceComparisonTest {
 
             executarExperimentoPorDificuldade(new BacktrackingSolver(false), "Backtracking", dificuldade);
             executarExperimentoPorDificuldade(new BranchAndBoundSolver(false), "Branch and Bound", dificuldade);
-            executarExperimentoPorDificuldade(new GreedySolver(), "Greedy", dificuldade);
             executarExperimentoPorDificuldade(new DynamicProgrammingSolver(), "Dynamic Programming", dificuldade);
         }
     }
@@ -102,8 +126,6 @@ public class PerformanceComparisonTest {
                     caminho, tamanho, dificuldade);
                 executarExperimentoPorTamanho(new BranchAndBoundSolver(false), "Branch and Bound",
                     caminho, tamanho, dificuldade);
-                executarExperimentoPorTamanho(new GreedySolver(), "Greedy", caminho, tamanho,
-                    dificuldade);
                 executarExperimentoPorTamanho(new DynamicProgrammingSolver(), "Dynamic Programming",
                     caminho, tamanho, dificuldade);
             }
@@ -145,21 +167,35 @@ public class PerformanceComparisonTest {
                 metricas.setMaxVisitedNodes(LIMITE_NOS_DIMENSOES_GRANDES);
             }
 
-            long memAntes = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
-            long inicio = System.nanoTime();
-            
-                boolean solucaoEncontrada = solver.solve(tabuleiro, metricas);
-                String statusExecucao = metricas.isVisitLimitReached()
+            // Medição do tempo e da memória alocada pela thread do algoritmo
+        long memAntes = memoriaAlocada();
+        long inicio = System.nanoTime();
+
+        boolean solucaoEncontrada;
+        boolean limiteAtingido = false;
+
+        try {
+            solucaoEncontrada = solver.solve(tabuleiro, metricas);
+        } catch (Metrics.VisitLimitReachedException e) {
+            limiteAtingido = true;
+            solucaoEncontrada = false;
+        }
+
+        long fim = System.nanoTime();
+        long memDepois = memoriaAlocada();
+
+        // Memória alocada durante a execução do algoritmo
+        long memUsada = Math.max(0, memDepois - memAntes);
+
+        metricas.setMemoryUsedBytes(memUsada);
+
+            String statusExecucao = limiteAtingido || metricas.isVisitLimitReached()
                     ? "nao_concluido"
                     : solucaoEncontrada ? "concluido" : "falhou";
+
             if (solucaoEncontrada) {
                 solucoesEncontradas++;
             }
-            
-            long fim = System.nanoTime();
-            long memDepois = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
-            long memUsada = memDepois - memAntes;
-            metricas.setMemoryUsedBytes(memUsada);
 
             tempos[i]              = (fim - inicio) / 1_000_000.0;
             nosVisitados[i]        = metricas.getVisitedNodes();

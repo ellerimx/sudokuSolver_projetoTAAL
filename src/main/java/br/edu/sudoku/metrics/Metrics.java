@@ -14,13 +14,23 @@ public class Metrics {
     private long maxVisitedNodes = Long.MAX_VALUE;
 
     public void incrementVisitedNodes() {
+        if (visitedNodes >= maxVisitedNodes) {
+            throw new VisitLimitReachedException();
+        }
+
         visitedNodes++;
+        atualizarMemoria();
+    }
+
+    public static class VisitLimitReachedException extends RuntimeException {
+        private static final long serialVersionUID = 1L;
     }
 
     public void setMaxVisitedNodes(long maxVisitedNodes) {
         if (maxVisitedNodes <= 0) {
             throw new IllegalArgumentException("O limite de nós deve ser positivo.");
         }
+
         this.maxVisitedNodes = maxVisitedNodes;
     }
 
@@ -30,15 +40,36 @@ public class Metrics {
 
     public void incrementBacktracks() {
         backtracks++;
+        atualizarMemoria();
     }
 
     public void incrementRecursiveCalls() {
         recursiveCalls++;
+        atualizarMemoria();
     }
 
     public void updateMaxDepth(long currentDepth) {
         if (currentDepth > maxDepth) {
             maxDepth = currentDepth;
+        }
+
+        atualizarMemoria();
+    }
+
+    /**
+     * Atualiza o pico de memória utilizada pelo processo Java.
+     *
+     * A memória registrada corresponde ao maior uso de heap observado
+     * durante a execução do algoritmo.
+     */
+    private void atualizarMemoria() {
+        Runtime runtime = Runtime.getRuntime();
+
+        long memoriaUsada =
+                runtime.totalMemory() - runtime.freeMemory();
+
+        if (memoriaUsada > memoryUsedBytes) {
+            memoryUsedBytes = memoriaUsada;
         }
     }
 

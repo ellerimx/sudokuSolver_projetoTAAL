@@ -12,7 +12,6 @@ import br.edu.sudoku.model.SudokuBoard;
 import br.edu.sudoku.solver.backtracking.BacktrackingSolver;
 import br.edu.sudoku.solver.branchandbound.BranchAndBoundSolver;
 import br.edu.sudoku.solver.dynamicprogramming.DynamicProgrammingSolver;
-import br.edu.sudoku.solver.greedy.GreedySolver;
 import br.edu.sudoku.solver.SudokuSolver;
 
 import java.util.Scanner;
@@ -54,8 +53,7 @@ public class ExperimentRunner {
         System.out.println("-------------------------------------------------------");
         System.out.println("1 - Backtracking");
         System.out.println("2 - Branch and Bound");
-        System.out.println("3 - Greedy");
-        System.out.println("4 - Programação Dinâmica");
+        System.out.println("3 - Programação Dinâmica");
         System.out.println("0 - Sair");
         System.out.println("-------------------------------------------------------");
     }
@@ -162,20 +160,12 @@ public class ExperimentRunner {
                         nomeAlgoritmoArquivo = "backtracking";
                         nomeAlgoritmo = "BACKTRACKING";
                         break;
-
                     case 2:
                         solver = new BranchAndBoundSolver();
                         nomeAlgoritmoArquivo = "branchandbound";
                         nomeAlgoritmo = "BRANCH AND BOUND";
                         break;
-
                     case 3:
-                        solver = new GreedySolver();
-                        nomeAlgoritmoArquivo = "greedy";
-                        nomeAlgoritmo = "GREEDY";
-                        break;
-
-                    case 4:
                         solver = new DynamicProgrammingSolver();
                         nomeAlgoritmoArquivo = "dynamicprogramming";
                         nomeAlgoritmo = "DYNAMIC PROGRAMMING";
