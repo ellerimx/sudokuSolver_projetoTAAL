@@ -10,7 +10,6 @@ import br.edu.sudoku.model.SudokuBoard;
 import br.edu.sudoku.solver.backtracking.BacktrackingSolver;
 import br.edu.sudoku.solver.branchandbound.BranchAndBoundSolver;
 import br.edu.sudoku.solver.dynamicprogramming.DynamicProgrammingSolver;
-import br.edu.sudoku.solver.greedy.GreedySolver;
 
 public class QuickPerformanceTest {
 
@@ -56,20 +55,6 @@ public class QuickPerformanceTest {
         System.out.println("  Tempo (ms):     " + tempoBb);
         System.out.println("  Nos visitados:  " + metricasBb.getVisitedNodes());
         System.out.println("  Backtracks:     " + metricasBb.getBacktracks());
-        System.out.println();
-
-        // -------- Greedy --------
-        SudokuBoard tabuleiroG = SudokuReader.read(caminho);
-        Metrics metricasG = new Metrics();
-
-        long inicioG = System.nanoTime();
-        new GreedySolver().solve(tabuleiroG, metricasG);
-        long tempoG = (System.nanoTime() - inicioG) / 1_000_000;
-
-        System.out.println("Greedy:");
-        System.out.println("  Tempo (ms):     " + tempoG);
-        System.out.println("  Nos visitados:  " + metricasG.getVisitedNodes());
-        System.out.println("  Backtracks:     " + metricasG.getBacktracks());
         System.out.println();
 
         // -------- Dynamic Programming --------

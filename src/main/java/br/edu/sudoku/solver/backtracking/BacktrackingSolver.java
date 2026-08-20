@@ -4,12 +4,14 @@ package br.edu.sudoku.solver.backtracking;
 
 import br.edu.sudoku.metrics.Metrics;
 import br.edu.sudoku.model.SudokuBoard;
+import br.edu.sudoku.solver.PassoObservador;
 import br.edu.sudoku.utils.SudokuValidator;
 
 public class BacktrackingSolver implements BacktrackingAlgorithm {
 
     private int passos = 0;
     private boolean visualizar = true;
+    private PassoObservador observador;
 
     public BacktrackingSolver() {
         this(true);
@@ -17,6 +19,11 @@ public class BacktrackingSolver implements BacktrackingAlgorithm {
 
     public BacktrackingSolver(boolean visualizar) {
         this.visualizar = visualizar;
+    }
+
+    public BacktrackingSolver(PassoObservador observador) {
+        this.visualizar = false;
+        this.observador = observador;
     }
 
     private String obterRotuloDificuldade() {
@@ -65,19 +72,7 @@ public class BacktrackingSolver implements BacktrackingAlgorithm {
 
                             tabuleiro.set(linha, coluna, numero);
                             passos++;
-
-                            if (visualizar) {
-                                limparConsole();
-
-                                System.out.println("");
-                                System.out.println("=== Sudoku Solver (Backtracking) ===");
-                                System.out.println("Dificuldade: " + obterRotuloDificuldade());
-                                System.out.println("Passo: " + passos);
-                                System.out.println("Tentando colocar " + numero + " em (" + linha + "," + coluna + ")\n");
-
-                                tabuleiro.printBoard();
-                                pausar();
-                            }
+                            notificarPasso(tabuleiro, "Tentando colocar " + numero + " em (" + linha + "," + coluna + ")", linha, coluna, false);
 
                             if (backtrack(tabuleiro, metricas, currentDepth + 1)) {
                                 return true;
@@ -86,19 +81,7 @@ public class BacktrackingSolver implements BacktrackingAlgorithm {
                             tabuleiro.set(linha, coluna, 0);
                             metricas.incrementBacktracks();
                             passos++;
-
-                            if (visualizar) {
-                                limparConsole();
-
-                                System.out.println("");
-                                System.out.println("=== Sudoku Solver (Backtracking) ===");
-                                System.out.println("Dificuldade: " + obterRotuloDificuldade());
-                                System.out.println("Passo: " + passos);
-                                System.out.println("Backtracking removendo " + numero + " de (" + linha + "," + coluna + ")\n");
-
-                                tabuleiro.printBoard();
-                                pausar();
-                            }
+                            notificarPasso(tabuleiro, "Backtracking removendo " + numero + " de (" + linha + "," + coluna + ")", linha, coluna, true);
                         }
                     }
 
@@ -108,6 +91,24 @@ public class BacktrackingSolver implements BacktrackingAlgorithm {
         }
 
         return true;
+    }
+
+    private void notificarPasso(SudokuBoard tabuleiro, String descricao, int linha, int coluna, boolean backtrack) {
+        if (observador != null) {
+            observador.aoPasso(tabuleiro, passos, descricao, linha, coluna, backtrack);
+            pausar();
+        } else if (visualizar) {
+            limparConsole();
+
+            System.out.println("");
+            System.out.println("=== Sudoku Solver (Backtracking) ===");
+            System.out.println("Dificuldade: " + obterRotuloDificuldade());
+            System.out.println("Passo: " + passos);
+            System.out.println(descricao + "\n");
+
+            tabuleiro.printBoard();
+            pausar();
+        }
     }
 
     private void pausar() {

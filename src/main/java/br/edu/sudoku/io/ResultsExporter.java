@@ -13,7 +13,7 @@ public class ResultsExporter {
 
     private static final String RESULTS_DIR = "src/main/resources/results";
     private static final String CSV_FILE = RESULTS_DIR + "/experiment_results.csv";
-    private static final String CSV_HEADER = "algoritmo;dificuldade;tamanho_tabuleiro;execucao;tempo_ms;memoria_bytes;nos_visitados;chamadas_recursivas;backtracks;profundidade_maxima;solucao_encontrada;status_execucao";
+    private static final String CSV_HEADER = "algoritmo;dificuldade;tamanho_tabuleiro;execucao;tempo_ms;memoria_bytes;nos_visitados;chamadas_recursivas;backtracks;podas;profundidade_maxima;solucao_encontrada;status_execucao";
 
     /**
      * Exporta um resultado individual para o arquivo CSV.
@@ -28,12 +28,13 @@ public class ResultsExporter {
      * @param nosVisitados Número de nós visitados
      * @param chamadosRecursivos Número total de chamadas recursivas
      * @param backtracks Número de backtracking realizados
+     * @param podas Número de podas realizadas (ramos descartados por inviabilidade)
      * @param maxDepth Profundidade máxima da árvore de busca
      */
     public static void exportarResultado(String nomeAlgoritmo, String dificuldade, int tamanhoTabuleiro,
                                         int numExecucao,
                                         double tempoMs, long memBytes, long nosVisitados,
-                                        long chamadosRecursivos, long backtracks, long maxDepth,
+                                        long chamadosRecursivos, long backtracks, long podas, long maxDepth,
                                         boolean solucaoEncontrada, String statusExecucao) {
         try {
             // Cria diretório se não existir
@@ -53,7 +54,7 @@ public class ResultsExporter {
                 }
 
                 // Escreve linha de dados usando ponto e vírgula como separador
-                String linha = String.format("%s;%s;%d;%d;%.3f;%d;%d;%d;%d;%d;%b;%s",
+                String linha = String.format("%s;%s;%d;%d;%.3f;%d;%d;%d;%d;%d;%d;%b;%s",
                         nomeAlgoritmo,
                         dificuldade,
                     tamanhoTabuleiro,
@@ -63,6 +64,7 @@ public class ResultsExporter {
                         nosVisitados,
                         chamadosRecursivos,
                         backtracks,
+                        podas,
                         maxDepth,
                         solucaoEncontrada,
                         statusExecucao);

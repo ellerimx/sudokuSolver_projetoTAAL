@@ -10,7 +10,6 @@ import br.edu.sudoku.model.SudokuBoard;
 import br.edu.sudoku.solver.backtracking.BacktrackingSolver;
 import br.edu.sudoku.solver.branchandbound.BranchAndBoundSolver;
 import br.edu.sudoku.solver.dynamicprogramming.DynamicProgrammingSolver;
-import br.edu.sudoku.solver.greedy.GreedySolver;
 
 public class SolverComparisonTest {
 
@@ -57,22 +56,6 @@ public class SolverComparisonTest {
 					"Solução do Branch and Bound deve ser válida (" + rotulo + ")");
 
 			System.out.printf("Branch and Bound (%s) | Nós: %d | Backtracks: %d%n",
-					rotulo, metricas.getVisitedNodes(), metricas.getBacktracks());
-		}
-
-		// -------- Greedy --------
-		if (all || solverProp.equals("greedy")) {
-			SudokuBoard tabuleiro = SudokuReader.read(caminho);
-			Metrics metricas = new Metrics();
-
-			GreedySolver solver = new GreedySolver();
-			boolean resolvido = solver.solve(tabuleiro, metricas);
-
-			assertTrue(resolvido, "GreedySolver deve resolver o Sudoku (" + rotulo + ")");
-			assertTrue(TestUtils.tabuleiroCompletoEValido(tabuleiro),
-					"Solução do Greedy deve ser válida (" + rotulo + ")");
-
-			System.out.printf("Greedy (%s) | Nós: %d | Backtracks: %d%n",
 					rotulo, metricas.getVisitedNodes(), metricas.getBacktracks());
 		}
 

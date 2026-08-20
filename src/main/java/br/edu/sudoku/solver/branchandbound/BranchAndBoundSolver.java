@@ -4,11 +4,13 @@ package br.edu.sudoku.solver.branchandbound;
 
 import br.edu.sudoku.metrics.Metrics;
 import br.edu.sudoku.model.SudokuBoard;
+import br.edu.sudoku.solver.PassoObservador;
 import br.edu.sudoku.utils.SudokuValidator;
 
 public class BranchAndBoundSolver implements BranchAndBoundAlgorithm {
 
     private final boolean visualizar;
+    private final PassoObservador observador;
 
     private int passos;
     private int melhorBound;
@@ -19,6 +21,12 @@ public class BranchAndBoundSolver implements BranchAndBoundAlgorithm {
 
     public BranchAndBoundSolver(boolean visualizar) {
         this.visualizar = visualizar;
+        this.observador = null;
+    }
+
+    public BranchAndBoundSolver(PassoObservador observador) {
+        this.visualizar = false;
+        this.observador = observador;
     }
 
     private String resolverRotuloDificuldade() {
@@ -83,6 +91,7 @@ public class BranchAndBoundSolver implements BranchAndBoundAlgorithm {
             if (bound > 0) {
                 tabuleiro.set(linha, coluna, 0);
                 metricas.incrementBacktracks();
+                metricas.incrementPrunes();
                 passos++;
                 exibirPasso(tabuleiro, linha, coluna, numero, true);
                 continue;
@@ -161,23 +170,23 @@ public class BranchAndBoundSolver implements BranchAndBoundAlgorithm {
     }
 
     private void exibirPasso(SudokuBoard tabuleiro, int linha, int coluna, int numero, boolean backtrack) {
-        if (!visualizar) {
-            return;
+        String descricao = backtrack
+                ? "Backtracking removendo " + numero + " de (" + linha + "," + coluna + ")"
+                : "Tentando colocar " + numero + " em (" + linha + "," + coluna + ")";
+
+        if (observador != null) {
+            observador.aoPasso(tabuleiro, passos, descricao, linha, coluna, backtrack);
+            pausar();
+        } else if (visualizar) {
+            limparConsole();
+            System.out.println("=== Sudoku Solver (Branch and Bound) ===");
+            System.out.println("Dificuldade: " + resolverRotuloDificuldade());
+            System.out.println("Passo: " + passos);
+            System.out.println(descricao + "\n");
+
+            tabuleiro.printBoard();
+            pausar();
         }
-
-        limparConsole();
-        System.out.println("=== Sudoku Solver (Branch and Bound) ===");
-        System.out.println("Dificuldade: " + resolverRotuloDificuldade());
-        System.out.println("Passo: " + passos);
-
-        if (backtrack) {
-            System.out.println("Backtracking removendo " + numero + " de (" + linha + "," + coluna + ")\n");
-        } else {
-            System.out.println("Tentando colocar " + numero + " em (" + linha + "," + coluna + ")\n");
-        }
-
-        tabuleiro.printBoard();
-        pausar();
     }
 
     private void pausar() {

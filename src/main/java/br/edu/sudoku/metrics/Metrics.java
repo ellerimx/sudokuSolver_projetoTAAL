@@ -8,13 +8,15 @@ public class Metrics {
 
     private long visitedNodes = 0;
     private long backtracks = 0;
+    private long prunes = 0;
     private long maxDepth = 0;
     private long memoryUsedBytes = 0;
     private long recursiveCalls = 0;
     private long maxVisitedNodes = Long.MAX_VALUE;
+    private long deadlineMillis = Long.MAX_VALUE;
 
     public void incrementVisitedNodes() {
-        if (visitedNodes >= maxVisitedNodes) {
+        if (visitedNodes >= maxVisitedNodes || System.currentTimeMillis() >= deadlineMillis) {
             throw new VisitLimitReachedException();
         }
 
@@ -34,12 +36,35 @@ public class Metrics {
         this.maxVisitedNodes = maxVisitedNodes;
     }
 
+    /**
+     * Define um limite de tempo de execução, encerrando a busca (via
+     * VisitLimitReachedException) caso o algoritmo demore demais para
+     * escalar em tabuleiros grandes (ex.: 25x25).
+     */
+    public void setTimeLimitMillis(long timeLimitMillis) {
+        if (timeLimitMillis <= 0) {
+            throw new IllegalArgumentException("O limite de tempo deve ser positivo.");
+        }
+
+        this.deadlineMillis = System.currentTimeMillis() + timeLimitMillis;
+    }
+
     public boolean isVisitLimitReached() {
-        return visitedNodes >= maxVisitedNodes;
+        return visitedNodes >= maxVisitedNodes || System.currentTimeMillis() >= deadlineMillis;
     }
 
     public void incrementBacktracks() {
         backtracks++;
+        atualizarMemoria();
+    }
+
+    /**
+     * Registra uma poda: um ramo descartado por inviabilidade (ex.: bound
+     * do Branch and Bound), distinto de um backtrack comum por esgotamento
+     * de candidatos.
+     */
+    public void incrementPrunes() {
+        prunes++;
         atualizarMemoria();
     }
 
@@ -85,6 +110,10 @@ public class Metrics {
         return backtracks;
     }
 
+    public long getPrunes() {
+        return prunes;
+    }
+
     public long getMaxDepth() {
         return maxDepth;
     }
@@ -100,6 +129,7 @@ public class Metrics {
     public void reset() {
         visitedNodes = 0;
         backtracks = 0;
+        prunes = 0;
         maxDepth = 0;
         memoryUsedBytes = 0;
         recursiveCalls = 0;

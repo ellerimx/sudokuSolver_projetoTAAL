@@ -1,4 +1,8 @@
 br\edu\sudoku\BacktrackingSolverTest.class
-br\edu\sudoku\SolverComparisonTest.class
+br\edu\sudoku\experiment\PerformanceComparisonTest.class
+br\edu\sudoku\QuickPerformanceTest.class
 br\edu\sudoku\SudokuValidatorTest.class
 br\edu\sudoku\BranchAndBoundSolverTest.class
+br\edu\sudoku\TestUtils.class
+br\edu\sudoku\SolverComparisonTest.class
+br\edu\sudoku\DynamicProgrammingSolverTest.class

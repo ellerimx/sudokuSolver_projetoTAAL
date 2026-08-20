@@ -18,6 +18,7 @@ public class PerformanceComparisonTest {
 
     private static final int EXECUCOES = 10;
     private static final long LIMITE_NOS_DIMENSOES_GRANDES = 100_000;
+    private static final long LIMITE_TEMPO_DIMENSOES_GRANDES_MS = 10_000;
 
     private static final ThreadMXBean THREAD_BEAN =
     (ThreadMXBean) ManagementFactory.getThreadMXBean();
@@ -151,6 +152,7 @@ private static long memoriaAlocada() {
         double[] tempos              = new double[EXECUCOES];
         long[]   nosVisitados        = new long[EXECUCOES];
         long[]   backtracks          = new long[EXECUCOES];
+        long[]   podasArray          = new long[EXECUCOES];
         long[]   memoriaBytesArray   = new long[EXECUCOES];
         long[]   recursiveCallsArray = new long[EXECUCOES];
         long[]   maxDepthArray       = new long[EXECUCOES];
@@ -165,6 +167,11 @@ private static long memoriaAlocada() {
             Metrics metricas = new Metrics();
             if (tamanho >= 16) {
                 metricas.setMaxVisitedNodes(LIMITE_NOS_DIMENSOES_GRANDES);
+                // O Branch and Bound recalcula o bound varrendo o tabuleiro inteiro a cada
+                // candidato tentado; em 25x25 isso torna o custo por nó caro o bastante para
+                // não terminar em tempo hábil antes de atingir o limite de nós. O limite de
+                // tempo garante que o experimento sempre finalize.
+                metricas.setTimeLimitMillis(LIMITE_TEMPO_DIMENSOES_GRANDES_MS);
             }
 
             // Medição do tempo e da memória alocada pela thread do algoritmo
@@ -200,6 +207,7 @@ private static long memoriaAlocada() {
             tempos[i]              = (fim - inicio) / 1_000_000.0;
             nosVisitados[i]        = metricas.getVisitedNodes();
             backtracks[i]          = metricas.getBacktracks();
+            podasArray[i]          = metricas.getPrunes();
             memoriaBytesArray[i]   = metricas.getMemoryUsedBytes();
             recursiveCallsArray[i] = metricas.getRecursiveCalls();
             maxDepthArray[i]       = metricas.getMaxDepth();
@@ -207,13 +215,14 @@ private static long memoriaAlocada() {
             // Exportar cada execução para CSV
                 ResultsExporter.exportarResultado(nome, grupo, tamanho, i + 1, tempos[i],
                     memoriaBytesArray[i], nosVisitados[i], recursiveCallsArray[i],
-                    backtracks[i], maxDepthArray[i], solucaoEncontrada, statusExecucao);
+                    backtracks[i], podasArray[i], maxDepthArray[i], solucaoEncontrada, statusExecucao);
         }
 
         double tempoMedio   = media(tempos);
         double desvioPadrao = desvio(tempos, tempoMedio);
         double mediaNos     = mediaLong(nosVisitados);
         double mediaBacks   = mediaLong(backtracks);
+        double mediaPodas   = mediaLong(podasArray);
         double mediaMemoria = mediaLong(memoriaBytesArray);
         double mediaRecursive = mediaLong(recursiveCallsArray);
         double mediaMaxDepth = mediaLong(maxDepthArray);
@@ -224,6 +233,7 @@ private static long memoriaAlocada() {
         System.out.printf("Desvio padrao:           %.3f ms%n", desvioPadrao);
         System.out.printf("Nos visitados (media):   %.0f%n",    mediaNos);
         System.out.printf("Backtracks (media):      %.0f%n",    mediaBacks);
+        System.out.printf("Podas (media):           %.0f%n",    mediaPodas);
         System.out.printf("Memoria usada (media):   %.0f bytes%n", mediaMemoria);
         System.out.printf("Chamadas recursivas (media): %.0f%n", mediaRecursive);
         System.out.printf("Profundidade maxima (media): %.0f%n", mediaMaxDepth);

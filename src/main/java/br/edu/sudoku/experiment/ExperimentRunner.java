@@ -247,6 +247,8 @@ public class ExperimentRunner {
 
                     System.out.println("║ Backtracks: "+ metricas.getBacktracks());
 
+                    System.out.println("║ Podas: "+ metricas.getPrunes());
+
                     System.out.println("║ Profundidade máxima: "+ metricas.getMaxDepth());
 
                     System.out.println("╚══════════════════════════════════════╝");
