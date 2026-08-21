@@ -90,22 +90,22 @@ private static long memoriaAlocada() {
         String[] dificuldades = {"facil", "medio", "dificil"};
         String[][] caminhos = {
             {
-                "sudokus/sudoku_4x4.txt",
+                "sudokus/sudoku_4x4_facil.txt",
                 "sudokus/sudoku_4x4_medio.txt",
                 "sudokus/sudoku_4x4_dificil.txt"
             },
             {
-                "sudokus/sudoku_facil.txt",
-                "sudokus/sudoku_medio.txt",
-                "sudokus/sudoku_dificil.txt"
+                "sudokus/sudoku_9x9_facil.txt",
+                "sudokus/sudoku_9x9_medio.txt",
+                "sudokus/sudoku_9x9_dificil.txt"
             },
             {
-                "sudokus/sudoku_16x16.txt",
+                "sudokus/sudoku_16x16_facil.txt",
                 "sudokus/sudoku_16x16_medio.txt",
                 "sudokus/sudoku_16x16_dificil.txt"
             },
             {
-                "sudokus/sudoku_25x25.txt",
+                "sudokus/sudoku_25x25_facil.txt",
                 "sudokus/sudoku_25x25_medio.txt",
                 "sudokus/sudoku_25x25_dificil.txt"
             }

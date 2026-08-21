@@ -19,13 +19,15 @@ public class SudokuWriter {
 
         PrintWriter writer = new PrintWriter(new FileWriter(path));
 
-        for (int i = 0; i < 9; i++) {
+        int tamanho = board.getSize();
 
-            for (int j = 0; j < 9; j++) {
+        for (int i = 0; i < tamanho; i++) {
+
+            for (int j = 0; j < tamanho; j++) {
 
                 writer.print(board.get(i, j));
 
-                if (j < 8) {
+                if (j < tamanho - 1) {
                     writer.print(" ");
                 }
             }

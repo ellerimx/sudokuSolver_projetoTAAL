@@ -14,46 +14,54 @@ public class SudokuReader {
 
     public static SudokuBoard read(String path) throws Exception {
 
-        InputStream input = SudokuReader.class
-                .getClassLoader()
-                .getResourceAsStream(path);
+    InputStream input = SudokuReader.class
+            .getClassLoader()
+            .getResourceAsStream(path);
 
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(input))) {
-            String primeiraLinha = reader.readLine();
+    if (input == null) {
+        throw new IllegalArgumentException(
+                "Arquivo de Sudoku não encontrado nos recursos: " + path);
+    }
 
-            if (primeiraLinha == null || primeiraLinha.trim().isEmpty()) {
-                throw new IllegalArgumentException("O arquivo de Sudoku está vazio.");
+    try (BufferedReader reader =
+                 new BufferedReader(new InputStreamReader(input))) {
+
+        String primeiraLinha = reader.readLine();
+
+        if (primeiraLinha == null || primeiraLinha.trim().isEmpty()) {
+            throw new IllegalArgumentException("O arquivo de Sudoku está vazio.");
+        }
+
+        String[] primeirosValores = primeiraLinha.trim().split("\\s+");
+
+        int size = primeirosValores.length;
+        int[][] board = new int[size][size];
+
+        for (int j = 0; j < size; j++) {
+            board[0][j] = Integer.parseInt(primeirosValores[j]);
+        }
+
+        for (int i = 1; i < size; i++) {
+
+            String linha = reader.readLine();
+
+            if (linha == null || linha.trim().isEmpty()) {
+                throw new IllegalArgumentException(
+                        "O arquivo não possui linhas suficientes.");
             }
 
-            String[] primeirosValores = primeiraLinha.trim().split("\\s+");
-            int size = primeirosValores.length;
-            int[][] board = new int[size][size];
+            String[] valores = linha.trim().split("\\s+");
+
+            if (valores.length != size) {
+                throw new IllegalArgumentException(
+                        "Todas as linhas devem possuir " + size + " valores.");
+            }
 
             for (int j = 0; j < size; j++) {
-                board[0][j] = Integer.parseInt(primeirosValores[j]);
+                board[i][j] = Integer.parseInt(valores[j]);
             }
-
-            for (int i = 1; i < size; i++) {
-                String linha = reader.readLine();
-
-                if (linha == null || linha.trim().isEmpty()) {
-                    throw new IllegalArgumentException(
-                            "O arquivo não possui linhas suficientes.");
-                }
-
-                String[] valores = linha.trim().split("\\s+");
-
-                if (valores.length != size) {
-                    throw new IllegalArgumentException(
-                            "Todas as linhas devem possuir " + size + " valores.");
-                }
-
-                for (int j = 0; j < size; j++) {
-                    board[i][j] = Integer.parseInt(valores[j]);
-                }
-            }
-
-            return new SudokuBoard(board);
         }
+
+        return new SudokuBoard(board);
     }
-}
+}}

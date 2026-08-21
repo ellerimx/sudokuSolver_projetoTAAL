@@ -58,6 +58,18 @@ public class ExperimentRunner {
         System.out.println("-------------------------------------------------------");
     }
 
+    private static void mostrarMenuTamanho() {
+        System.out.println();
+        System.out.println("TAMANHO DO TABULEIRO");
+        System.out.println("-------------------------------------------------------");
+        System.out.println("1 - 4x4");
+        System.out.println("2 - 9x9");
+        System.out.println("3 - 16x16");
+        System.out.println("4 - 25x25");
+        System.out.println("0 - Voltar");
+        System.out.println("-------------------------------------------------------");
+}
+
     // exibição do menu de dificuldade do Sudoku
     private static void mostrarMenuDificuldade() {
         System.out.println();
@@ -90,7 +102,7 @@ public class ExperimentRunner {
             }
 
             // validar algoritmo
-            if (opcaoAlgoritmo < 1 || opcaoAlgoritmo > 4) {
+            if (opcaoAlgoritmo < 1 || opcaoAlgoritmo > 3) {
                 System.out.println(
                         "\nAlgoritmo inexistente. " +
                         "Escolha uma opção válida."
@@ -98,6 +110,53 @@ public class ExperimentRunner {
                 continue;
             }
 
+            // ESCOLHA DO TAMANHO
+            mostrarMenuTamanho();
+            System.out.print("Escolha o tamanho: ");
+
+            Integer opcaoTamanhoLida = lerOpcaoInteira(scanner);
+
+            if (opcaoTamanhoLida == null) {
+                continue;
+            }
+
+            int opcaoTamanho = opcaoTamanhoLida;
+
+            // volta ao menu de algoritmos
+            if (opcaoTamanho == 0) {
+                continue;
+            }
+
+            // valida tamanho
+            if (opcaoTamanho < 1 || opcaoTamanho > 4) {
+                System.out.println("\nTamanho inválido. Escolha uma opção válida.");
+                continue;
+            }
+
+            int tamanhoTabuleiro;
+
+            switch (opcaoTamanho) {
+                case 1:
+                    tamanhoTabuleiro = 4;
+                    break;
+
+                case 2:
+                    tamanhoTabuleiro = 9;
+                    break;
+
+                case 3:
+                    tamanhoTabuleiro = 16;
+                    break;
+
+                case 4:
+                    tamanhoTabuleiro = 25;
+                    break;
+
+                default:
+                    continue;
+            }
+
+            // ESCOLHA DA DIFICULDADE
             mostrarMenuDificuldade();
             System.out.print("Escolha a dificuldade: ");
 
@@ -118,25 +177,23 @@ public class ExperimentRunner {
                 continue;
             }
 
-            String caminhoArquivo;
+            //String caminhoArquivo;
+
             String nomeDificuldade;
             String nomeDificuldadeArquivo;
 
             switch (opcaoDificuldade) {
                 case 1:
-                    caminhoArquivo = "sudokus/sudoku_facil.txt";
                     nomeDificuldade = "Fácil";
                     nomeDificuldadeArquivo = "facil";
                     break;
 
                 case 2:
-                    caminhoArquivo = "sudokus/sudoku_medio.txt";
                     nomeDificuldade = "Médio";
                     nomeDificuldadeArquivo = "medio";
                     break;
 
                 case 3:
-                    caminhoArquivo = "sudokus/sudoku_dificil.txt";
                     nomeDificuldade = "Difícil";
                     nomeDificuldadeArquivo = "dificil";
                     break;
@@ -144,6 +201,17 @@ public class ExperimentRunner {
                 default:
                     continue;
             }
+
+        // CAMINHO DO ARQUIVO
+        String tamanhoArquivo =
+            tamanhoTabuleiro + "x" + tamanhoTabuleiro;
+
+        String caminhoArquivo =
+            "sudokus/sudoku_"
+            + tamanhoArquivo
+            + "_"
+            + nomeDificuldadeArquivo
+            + ".txt";
 
             try {
                 // carrega o sudoku correspondente a dificuldade escolhida
@@ -182,6 +250,7 @@ public class ExperimentRunner {
                 System.out.println("║          EXPERIMENTO INICIADO       ║");
                 System.out.println("╠══════════════════════════════════════╣");
                 System.out.printf("║ Algoritmo: %-25s ║%n",nomeAlgoritmo);
+                System.out.printf("║ Tamanho: %-27s ║%n", tamanhoArquivo);
                 System.out.printf("║ Dificuldade: %-23s ║%n",nomeDificuldade);
                 System.out.println("╚══════════════════════════════════════╝");
 
@@ -218,11 +287,13 @@ public class ExperimentRunner {
                     SudokuWriter.printBoard(tabuleiro);
 
                     String arquivoSaida =
-                            "src/main/resources/sudokus/sudoku_"
-                            + nomeDificuldadeArquivo
-                            + "_"
-                            + nomeAlgoritmoArquivo
-                            + ".txt";
+                        "src/main/resources/results/sudoku_"
+                        + tamanhoArquivo
+                        + "_"
+                        + nomeDificuldadeArquivo
+                        + "_"
+                        + nomeAlgoritmoArquivo
+                        + ".txt";
 
                     SudokuWriter.writeToFile(tabuleiro,arquivoSaida);
 

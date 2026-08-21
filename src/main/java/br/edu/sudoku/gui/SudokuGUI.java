@@ -409,33 +409,43 @@ public class SudokuGUI extends JFrame {
     }
 
     private String caminhoArquivoSelecionado() {
-        int dificuldadeIdx = comboDificuldade.getSelectedIndex();
+    String tamanho;
 
-        String prefixo;
-        switch (comboTamanho.getSelectedIndex()) {
-            case 0: prefixo = "sudoku_4x4"; break;
-            case 1: prefixo = "sudoku"; break;
-            case 2: prefixo = "sudoku_16x16"; break;
-            case 3: prefixo = "sudoku_25x25"; break;
-            default: throw new IllegalStateException("Tamanho inválido.");
-        }
-
-        if (comboTamanho.getSelectedIndex() == 1) {
-            switch (dificuldadeIdx) {
-                case 0: return "sudokus/sudoku_facil.txt";
-                case 1: return "sudokus/sudoku_medio.txt";
-                case 2: return "sudokus/sudoku_dificil.txt";
-                default: throw new IllegalStateException("Dificuldade inválida.");
-            }
-        }
-
-        switch (dificuldadeIdx) {
-            case 0: return "sudokus/" + prefixo + ".txt";
-            case 1: return "sudokus/" + prefixo + "_medio.txt";
-            case 2: return "sudokus/" + prefixo + "_dificil.txt";
-            default: throw new IllegalStateException("Dificuldade inválida.");
-        }
+    switch (comboTamanho.getSelectedIndex()) {
+        case 0:
+            tamanho = "4x4";
+            break;
+        case 1:
+            tamanho = "9x9";
+            break;
+        case 2:
+            tamanho = "16x16";
+            break;
+        case 3:
+            tamanho = "25x25";
+            break;
+        default:
+            throw new IllegalStateException("Tamanho inválido.");
     }
+
+    String dificuldade;
+
+    switch (comboDificuldade.getSelectedIndex()) {
+        case 0:
+            dificuldade = "facil";
+            break;
+        case 1:
+            dificuldade = "medio";
+            break;
+        case 2:
+            dificuldade = "dificil";
+            break;
+        default:
+            throw new IllegalStateException("Dificuldade inválida.");
+    }
+
+    return "sudokus/sudoku_" + tamanho + "_" + dificuldade + ".txt";
+}
 
     private void aoMudarTamanho() {
         switch (comboTamanho.getSelectedIndex()) {
