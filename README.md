@@ -19,9 +19,10 @@ Cada tamanho possui instâncias classificadas em três níveis de dificuldade:
 
 Mais do que apenas resolver o sudoku, o projeto foi construído para permitir observar, na prática, como cada paradigma se comporta diante de instâncias de tamanhos diferentes e níveis de dificuldade,  quantos estados cada um precisa explorar, quanto tempo e memória consome, e em que ponto cada estratégia deixa de ser viável conforme a dificuldade do tabuleiro aumenta.
 
-Os testes, comparações e gráficos usados na análise formal estão documentados nos relatório abaixo (necessário e-mail institucional para acesso):
+Os testes, comparações e gráficos utilizados na análise experimental estão documentados no relatório completo. As versões em arquivo e online estão disponíveis nos links abaixo:
 
-- **Relatório:** 
+- **Relatório em PDF:** [Acessar relatório](./relatório/Sudoku%20Solver%20-%20Relatório%20%28Projeto%20TAAL%29.pdf)
+- **Google Docs:** [Acessar relatório online]((https://docs.google.com/document/d/1MrSuCMAWIcCiZ21MSblVLjxp6qEWUvmyoUXNizrzokI/edit?usp=sharing))
 
 ---
 
