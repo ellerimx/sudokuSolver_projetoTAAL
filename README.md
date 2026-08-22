@@ -3,26 +3,62 @@
 ## Sobre o projeto
 
 Repositório destinado a três implementações distintas para a resolução automática de tabuleiros de Sudoku, cada uma baseada em um paradigma clássico de projeto de algoritmos:
+- **Backtracking**
+- **Branch and Bound**
+- **Programação Dinâmica**
 
-- Backtracking
-- Branch and Bound
-- Programação Dinâmica
+O sistema permite executar e visualizar a resolução de tabuleiros de:
+- **4x4**
+- **9x9**
+- **16x16**
+- **25x25**
 
-Mais do que apenas resolver o sudoku, o projeto foi construído para permitir observar, na prática, como cada paradigma se comporta diante do mesmo problema,  quantos estados cada um precisa explorar, quanto tempo e memória consome, e em que ponto cada estratégia deixa de ser viável conforme a dificuldade do tabuleiro aumenta.
+Cada tamanho possui instâncias classificadas em três níveis de dificuldade:
+- **Fácil**
+- **Médio**
+
+Mais do que apenas resolver o sudoku, o projeto foi construído para permitir observar, na prática, como cada paradigma se comporta diante de instâncias de tamanhos diferentes e níveis de dificuldade,  quantos estados cada um precisa explorar, quanto tempo e memória consome, e em que ponto cada estratégia deixa de ser viável conforme a dificuldade do tabuleiro aumenta.
 
 Os testes, comparações e gráficos usados na análise formal estão documentados nos relatório abaixo (necessário e-mail institucional para acesso):
 
-- **Relatório Pt. 1:** 
+- **Relatório:** 
 
+---
 
-## O que este projeto se propõe a responder
+## Objetivos do estudo experimental
 
-- Como implementar o mesmo problema sob paradigmas algorítmicos diferentes;
-- Qual estratégia entrega melhor relação entre tempo/memória gastos e qualidade da solução;
-- Até que ponto a teoria (complexidade assintótica) se confirma na prática (medições reais);
-- O quanto podas e critérios de escolha de célula/valor reduzem o espaço de busca explorado.
+A partir das implementações e dos experimentos realizados, o projeto busca analisar questões como:
 
-## Antes de rodar
+- Qual algoritmo apresenta menor tempo de execução nas diferentes instâncias?
+- Qual algoritmo consome menos memória?
+- Como o desempenho dos algoritmos varia conforme o tamanho do tabuleiro aumenta?
+- Em que tamanho de entrada determinado algoritmo se torna inviável?
+- Como a dificuldade da instância influencia o desempenho?
+- Existe diferença significativa entre a análise assintótica e o comportamento observado experimentalmente?
+- Como as estratégias de busca e poda influenciam a quantidade de estados explorados?
+- Em quais cenários uma estratégia consegue encontrar uma solução de forma mais eficiente?
+- O custo computacional adicional de uma estratégia mais sofisticada compensa seus benefícios?
+
+Dessa forma, os experimentos procuram relacionar a **análise teórica dos algoritmos** com seu **comportamento observado na prática**.
+
+---
+## Algoritmos implementados
+
+### Backtracking
+
+Realiza uma busca recursiva, preenchendo as células vazias do Sudoku e retornando a estados anteriores quando uma escolha leva a uma configuração inválida.
+
+### Branch and Bound
+
+Utiliza uma estratégia de busca com poda de ramos. Antes de continuar a exploração de determinado estado, é calculado um limite (`bound`) para verificar se aquele ramo ainda pode levar a uma solução viável.
+
+### Programação Dinâmica
+
+Utiliza memorização de estados já explorados para evitar a repetição de determinadas subsoluções durante a busca.
+
+---
+
+## Requisitos para rodar
 
 É necessário ter instalado:
 
@@ -30,13 +66,29 @@ Os testes, comparações e gráficos usados na análise formal estão documentad
 - Apache Maven 3.6 ou superior
 - Uma IDE de sua preferência (IntelliJ IDEA, VS Code, Eclipse etc.) — opcional, mas recomendado
 
-## Preparando o ambiente
+Para verificar se Java e Maven estão instalados:
 
 ```bash
+java -version
+mvn -version
+````
+
+---
+
+## Preparando o ambiente
+1. Clone o repositório no terminal ou CMD:
+```bash
 git clone https://github.com/ellerimx/sudokuSolver_projetoTAAL.git
+```
+Depois entre na pasta do projeto
+```bash
 cd sudokuSolver_projetoTAAL
+```
+2. Compile o projeto
+```bash 
 mvn clean compile
 ```
+Com a compilação terminada e sem erros, o projeto está pronto para ser executado.
 
 ## Como rodar
 
@@ -47,7 +99,7 @@ mvn clean package
 java -cp target/classes br.edu.sudoku.experiment.ExperimentRunner
 ```
 
-### Interface gráfica
+## Interface gráfica
 
 Para visualizar o tabuleiro e a resolução fora do terminal, existe uma interface gráfica simples (Swing) na classe `SudokuGUI`. Pela IDE, basta executá-la; pela linha de comando:
 
@@ -56,7 +108,7 @@ mvn clean package
 java -cp target/classes br.edu.sudoku.gui.SudokuGUI
 ```
 
-Nela é possível escolher o tamanho do tabuleiro, o algoritmo e a dificuldade, clicar em "Resolver" e ver o tabuleiro preenchido junto das métricas da execução. Para Backtracking e Branch and Bound em tabuleiros até 9x9, o passo a passo da busca (célula tentada, valor testado e backtracks) aparece direto no painel "Passo a passo" da interface, em vez de ser impresso no terminal.
+Nela é possível escolher o tamanho do tabuleiro, o algoritmo e a dificuldade, clicar em "Resolver" e ver o tabuleiro preenchido junto das métricas da execução. Para Backtracking e Branch and Bound em tabuleiros de 4x4, 9x9, 16x16 e 25x25, o passo a passo da busca (célula tentada, valor testado e backtracks) aparece direto no painel "Passo a passo" da interface, em vez de ser impresso no terminal.
 
 **Capturas de tela:**
 
@@ -88,11 +140,22 @@ if (resolvido) {
 }
 ```
 
+## Rodando os testes
+
+```bash
+mvn test                              # suíte completa
+mvn test -Dtest=BacktrackingSolverTest  # um teste específico
+```
+
+Pelo IntelliJ: rode `clean` e depois `install` no painel Maven uma vez para preparar o projeto; depois disso, qualquer classe (principal ou de teste) pode ser executada direto pelo ícone ▶ ao lado dela.
+
+---
+
 ### Registro dos resultados em CSV
 
 A classe `ResultsExporter` grava cada execução em `src/main/resources/results/experiment_results.csv`. É esse arquivo que alimenta as tabelas e gráficos usados nos relatórios.
 
-Quem efetivamente gera esse CSV é `PerformanceComparisonTest` (em `src/test/.../experiment/`): roda os três algoritmos por dificuldade (9x9) e por tamanho de tabuleiro (4x4, 9x9, 16x16, 25x25), 10 execuções cada, exportando tempo, memória, nós visitados, chamadas recursivas, backtracks, podas e profundidade máxima. É um programa com `main()`, não um `@Test`, então não roda com `mvn test` — precisa ser chamado direto:
+Quem efetivamente gera esse CSV é `PerformanceComparisonTest` (em `src/test/.../experiment/`): roda os três algoritmos por dificuldade e por tamanho de tabuleiro (4x4, 9x9, 16x16, 25x25), 10 execuções cada, exportando tempo, memória, nós visitados, chamadas recursivas, backtracks, podas e profundidade máxima. É um programa com `main()`, não um `@Test`, então não roda com `mvn test` — precisa ser chamado direto:
 
 ```bash
 mvn clean test-compile
@@ -109,9 +172,9 @@ Ficam em `src/main/resources/sudokus/`:
 
 | Arquivo | Dificuldade |
 |---|---|
-| `sudoku_facil.txt` | Fácil |
-| `sudoku_medio.txt` | Média |
-| `sudoku_dificil.txt` | Difícil |
+| `sudoku_9x9_facil.txt` | Fácil |
+| `sudoku_9x9_medio.txt` | Média |
+| `sudoku_9x9_dificil.txt` | Difícil |
 
 Formato: matriz 9x9, valores separados por espaço, `0` representando célula vazia.
 
@@ -151,9 +214,11 @@ src
     └── resources/sudokus/        → instância usada nos testes
 ```
 
+---
+
 ## O que cada parte faz
 
-**Modelo** — `SudokuBoard` guarda o tabuleiro como matriz 9x9, controla quais células vieram fixas na instância original e cuida da impressão colorida no terminal.
+**Modelo** — `SudokuBoard` epresenta o tabuleiro e fornece operações para acessar e modificar suas células. A implementação é genérica em relação ao tamanho do tabuleiro, permitindo trabalhar com 4x4, 9x9, 16x16 e 25x25.
 
 **Solvers** — cada pacote dentro de `solver/` implementa `SudokuSolver` (`solve(board, metrics)`) com uma estratégia diferente:
 - `BacktrackingSolver`: busca recursiva com retrocesso ao encontrar um estado inválido;
@@ -162,29 +227,33 @@ src
 
 **E/S** — `SudokuReader` lê as instâncias de `resources/sudokus`; `SudokuWriter` imprime no console e grava a solução em arquivo; `ResultsExporter` acumula as métricas de cada rodada no CSV de resultados.
 
-**Métricas** — `Metrics` contabiliza tempo de execução, memória usada, nós visitados, chamadas recursivas, backtracks, podas (ramos descartados por inviabilidade, específico do Branch and Bound) e profundidade máxima atingida na busca.
+**Métricas** — `Metrics` registra informações utilizadas para analisar o comportamento dos algoritmos, incluindo: nós visitados; chamadas recursivas; backtracks; podas; memória utilizada; profundidade máxima. O tempo de execução é medido durante os experimentos e registrado nos resultados.
 
-**Validação** — `SudokuValidator` confere se um valor pode ocupar determinada célula sem ferir as regras de linha, coluna e bloco 3x3.
+**Validação** — `SudokuValidator` verifica se determinado valor pode ser inserido em uma célula sem violar as regras de linha, coluna e bloco do Sudoku.
+
+**Interface gráfica** — `SudokuGUI` fornece uma interface Swing para seleção da instância, algoritmo e dificuldade, além da visualização da resolução.
 
 **Testes** — cobrem cada solver individualmente (`BacktrackingSolverTest`, `BranchAndBoundSolverTest`, `DynamicProgrammingSolverTest`), o validador (`SudokuValidatorTest`), comparações entre algoritmos (`SolverComparisonTest`, `PerformanceComparisonTest`) e checagens rápidas de desempenho (`QuickPerformanceTest`).
 
+---
+
 ## Critérios usados na comparação
+Os algoritmos são analisados considerando:
 
-- Complexidade assintótica teórica (tempo e espaço, pior caso);
-- Tempo de execução medido empiricamente;
-- Memória consumida durante a resolução;
-- Quantidade de nós explorados, de backtracks e de podas realizadas;
-- Profundidade máxima atingida na árvore de busca;
-- Comportamento de cada algoritmo ao passar de instâncias fáceis para difíceis (escalabilidade).
+- Tempo de execução;
+- Memória utilizada;
+- Quantidade de nós visitados;
+- Quantidade de chamadas recursivas;
+- Quantidade de backtracks;
+- Quantidade de podas;
+- Profundidade máxima da busca;
+- Taxa de conclusão das instâncias;
+- Crescimento do custo computacional conforme o tamanho da entrada aumenta;
+- Diferença entre o comportamento teórico e o comportamento observado experimentalmente.
 
-## Rodando os testes
+A análise considera tanto a dificuldade das instâncias quanto o tamanho dos tabuleiros, permitindo observar diferentes aspectos do comportamento dos algoritmos.
 
-```bash
-mvn test                              # suíte completa
-mvn test -Dtest=BacktrackingSolverTest  # um teste específico
-```
-
-Pelo IntelliJ: rode `clean` e depois `install` no painel Maven uma vez para preparar o projeto; depois disso, qualquer classe (principal ou de teste) pode ser executada direto pelo ícone ▶ ao lado dela.
+---
 
 ## Licença
 
