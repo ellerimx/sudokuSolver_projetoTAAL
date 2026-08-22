@@ -1,8 +1,5 @@
 package br.edu.sudoku.experiment;
 
-import java.lang.management.ManagementFactory;
-import com.sun.management.ThreadMXBean;
-
 import br.edu.sudoku.TestUtils;
 import br.edu.sudoku.io.ResultsExporter;
 import br.edu.sudoku.io.SudokuReader;
@@ -19,28 +16,6 @@ public class PerformanceComparisonTest {
     private static final int EXECUCOES = 10;
     private static final long LIMITE_NOS_DIMENSOES_GRANDES = 100_000;
     private static final long LIMITE_TEMPO_DIMENSOES_GRANDES_MS = 10_000;
-
-    private static final ThreadMXBean THREAD_BEAN =
-    (ThreadMXBean) ManagementFactory.getThreadMXBean();
-
-    static {
-        if (THREAD_BEAN.isThreadAllocatedMemorySupported()
-                && !THREAD_BEAN.isThreadAllocatedMemoryEnabled()) {
-            THREAD_BEAN.setThreadAllocatedMemoryEnabled(true);
-        }
-    }
-
-private static long memoriaAlocada() {
-    if (THREAD_BEAN.isThreadAllocatedMemorySupported()
-            && THREAD_BEAN.isThreadAllocatedMemoryEnabled()) {
-
-        return THREAD_BEAN.getThreadAllocatedBytes(
-                Thread.currentThread().threadId()
-        );
-    }
-
-    return 0;
-}
 
     public static void main(String[] args) throws Exception {
 
@@ -174,8 +149,7 @@ private static long memoriaAlocada() {
                 metricas.setTimeLimitMillis(LIMITE_TEMPO_DIMENSOES_GRANDES_MS);
             }
 
-            // Medição do tempo e da memória alocada pela thread do algoritmo
-        long memAntes = memoriaAlocada();
+            // Medição do tempo de execução do algoritmo
         long inicio = System.nanoTime();
 
         boolean solucaoEncontrada;
@@ -189,12 +163,6 @@ private static long memoriaAlocada() {
         }
 
         long fim = System.nanoTime();
-        long memDepois = memoriaAlocada();
-
-        // Memória alocada durante a execução do algoritmo
-        long memUsada = Math.max(0, memDepois - memAntes);
-
-        metricas.setMemoryUsedBytes(memUsada);
 
             String statusExecucao = limiteAtingido || metricas.isVisitLimitReached()
                     ? "nao_concluido"

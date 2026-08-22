@@ -266,19 +266,11 @@ public class ExperimentRunner {
                 System.setProperty("sudoku.difficulty",nomeDificuldadeArquivo);
 
                 //execução do algoritmo escolhido
-                long memAntes = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
-
                 long inicio = System.currentTimeMillis();
 
                 boolean resolvido = solver.solve(tabuleiro, metricas);
 
                 long fim = System.currentTimeMillis();
-
-                long memDepois = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
-
-                long memUsada = memDepois - memAntes;
-
-                metricas.setMemoryUsedBytes(memUsada);
 
                 // resultados do experimento                
                 if (resolvido) {
@@ -310,7 +302,7 @@ public class ExperimentRunner {
 
                     System.out.println("║ Tempo de execução: "+ (fim - inicio)+ " ms");
 
-                    System.out.println("║ Memória usada: "+ memUsada+ " bytes");
+                    System.out.println("║ Memória usada: "+ metricas.getMemoryUsedBytes()+ " bytes");
 
                     System.out.println("║ Nós visitados: "+ metricas.getVisitedNodes());
 
