@@ -22,7 +22,7 @@ Mais do que apenas resolver o sudoku, o projeto foi construído para permitir ob
 Os testes, comparações e gráficos utilizados na análise experimental estão documentados no relatório completo. As versões em arquivo e online estão disponíveis nos links abaixo:
 
 - **Relatório em PDF:** [Acessar relatório](./relatório/Sudoku%20Solver%20-%20Relatório%20%28Projeto%20TAAL%29.pdf)
-- **Google Docs:** [Acessar relatório online]((https://docs.google.com/document/d/1MrSuCMAWIcCiZ21MSblVLjxp6qEWUvmyoUXNizrzokI/edit?usp=sharing))
+- **Google Docs:** [Acessar relatório online](https://docs.google.com/document/d/1MrSuCMAWIcCiZ21MSblVLjxp6qEWUvmyoUXNizrzokI/edit?usp=sharing)
 
 ---
 
