@@ -1,181 +1,451 @@
 algoritmo;dificuldade;tamanho_tabuleiro;execucao;tempo_ms;memoria_bytes;nos_visitados;chamadas_recursivas;backtracks;podas;profundidade_maxima;solucao_encontrada;status_execucao
-Backtracking;facil;9;1;21,507;363536;70;70;50;0;19;true;concluido
-Backtracking;facil;9;2;0,872;8968;70;70;50;0;19;true;concluido
-Backtracking;facil;9;3;0,430;8968;70;70;50;0;19;true;concluido
-Backtracking;facil;9;4;0,334;8968;70;70;50;0;19;true;concluido
-Backtracking;facil;9;5;0,281;8968;70;70;50;0;19;true;concluido
-Backtracking;facil;9;6;0,125;8968;70;70;50;0;19;true;concluido
-Backtracking;facil;9;7;0,172;8968;70;70;50;0;19;true;concluido
-Backtracking;facil;9;8;0,138;8968;70;70;50;0;19;true;concluido
-Backtracking;facil;9;9;0,231;8968;70;70;50;0;19;true;concluido
-Backtracking;facil;9;10;0,204;8968;70;70;50;0;19;true;concluido
-Branch and Bound;facil;9;1;1,205;14480;32;32;22;10;19;true;concluido
-Branch and Bound;facil;9;2;0,684;7192;32;32;22;10;19;true;concluido
-Branch and Bound;facil;9;3;0,493;7192;32;32;22;10;19;true;concluido
-Branch and Bound;facil;9;4;0,632;7192;32;32;22;10;19;true;concluido
-Branch and Bound;facil;9;5;0,453;7568;32;32;22;10;19;true;concluido
-Branch and Bound;facil;9;6;0,268;7192;32;32;22;10;19;true;concluido
-Branch and Bound;facil;9;7;0,617;7192;32;32;22;10;19;true;concluido
-Branch and Bound;facil;9;8;0,226;7192;32;32;22;10;19;true;concluido
-Branch and Bound;facil;9;9;0,280;7192;32;32;22;10;19;true;concluido
-Branch and Bound;facil;9;10;0,285;7192;32;32;22;10;19;true;concluido
-Dynamic Programming;facil;9;1;0,784;22344;70;70;50;0;19;true;concluido
-Dynamic Programming;facil;9;2;0,798;22008;70;70;50;0;19;true;concluido
-Dynamic Programming;facil;9;3;0,510;22008;70;70;50;0;19;true;concluido
-Dynamic Programming;facil;9;4;0,557;22008;70;70;50;0;19;true;concluido
-Dynamic Programming;facil;9;5;0,382;22008;70;70;50;0;19;true;concluido
-Dynamic Programming;facil;9;6;0,296;22008;70;70;50;0;19;true;concluido
-Dynamic Programming;facil;9;7;0,140;22168;70;70;50;0;19;true;concluido
-Dynamic Programming;facil;9;8;0,359;22008;70;70;50;0;19;true;concluido
-Dynamic Programming;facil;9;9;0,181;22008;70;70;50;0;19;true;concluido
-Dynamic Programming;facil;9;10;0,129;22008;70;70;50;0;19;true;concluido
-Backtracking;medio;9;1;0,160;10680;86;86;57;0;28;true;concluido
-Backtracking;medio;9;2;0,138;10680;86;86;57;0;28;true;concluido
-Backtracking;medio;9;3;0,178;11088;86;86;57;0;28;true;concluido
-Backtracking;medio;9;4;0,199;10680;86;86;57;0;28;true;concluido
-Backtracking;medio;9;5;0,208;10680;86;86;57;0;28;true;concluido
-Backtracking;medio;9;6;0,204;10680;86;86;57;0;28;true;concluido
-Backtracking;medio;9;7;0,232;10680;86;86;57;0;28;true;concluido
-Backtracking;medio;9;8;0,303;10680;86;86;57;0;28;true;concluido
-Backtracking;medio;9;9;0,203;10680;86;86;57;0;28;true;concluido
-Backtracking;medio;9;10;0,159;10680;86;86;57;0;28;true;concluido
-Branch and Bound;medio;9;1;0,367;7488;39;39;16;6;28;true;concluido
-Branch and Bound;medio;9;2;0,279;7488;39;39;16;6;28;true;concluido
-Branch and Bound;medio;9;3;0,279;7488;39;39;16;6;28;true;concluido
-Branch and Bound;medio;9;4;0,213;7488;39;39;16;6;28;true;concluido
-Branch and Bound;medio;9;5;0,332;7488;39;39;16;6;28;true;concluido
-Branch and Bound;medio;9;6;0,225;7488;39;39;16;6;28;true;concluido
-Branch and Bound;medio;9;7;0,352;7488;39;39;16;6;28;true;concluido
-Branch and Bound;medio;9;8;0,220;7488;39;39;16;6;28;true;concluido
-Branch and Bound;medio;9;9;0,247;7488;39;39;16;6;28;true;concluido
-Branch and Bound;medio;9;10;0,306;7488;39;39;16;6;28;true;concluido
-Dynamic Programming;medio;9;1;0,325;26712;86;86;57;0;28;true;concluido
-Dynamic Programming;medio;9;2;0,330;26712;86;86;57;0;28;true;concluido
-Dynamic Programming;medio;9;3;0,220;26712;86;86;57;0;28;true;concluido
-Dynamic Programming;medio;9;4;0,274;26712;86;86;57;0;28;true;concluido
-Dynamic Programming;medio;9;5;0,369;26712;86;86;57;0;28;true;concluido
-Dynamic Programming;medio;9;6;0,348;26712;86;86;57;0;28;true;concluido
-Dynamic Programming;medio;9;7;0,242;26712;86;86;57;0;28;true;concluido
-Dynamic Programming;medio;9;8;0,277;26712;86;86;57;0;28;true;concluido
-Dynamic Programming;medio;9;9;0,563;26712;86;86;57;0;28;true;concluido
-Dynamic Programming;medio;9;10;0,497;26712;86;86;57;0;28;true;concluido
-Backtracking;dificil;9;1;0,103;9728;85;85;46;0;38;true;concluido
-Backtracking;dificil;9;2;0,242;9728;85;85;46;0;38;true;concluido
-Backtracking;dificil;9;3;0,172;9728;85;85;46;0;38;true;concluido
-Backtracking;dificil;9;4;0,180;9728;85;85;46;0;38;true;concluido
-Backtracking;dificil;9;5;0,120;9728;85;85;46;0;38;true;concluido
-Backtracking;dificil;9;6;0,108;9728;85;85;46;0;38;true;concluido
-Backtracking;dificil;9;7;0,146;10120;85;85;46;0;38;true;concluido
-Backtracking;dificil;9;8;0,150;9728;85;85;46;0;38;true;concluido
-Backtracking;dificil;9;9;0,368;9728;85;85;46;0;38;true;concluido
-Backtracking;dificil;9;10;0,117;9728;85;85;46;0;38;true;concluido
-Branch and Bound;dificil;9;1;0,490;10464;52;52;24;11;38;true;concluido
-Branch and Bound;dificil;9;2;0,753;10464;52;52;24;11;38;true;concluido
-Branch and Bound;dificil;9;3;0,449;10464;52;52;24;11;38;true;concluido
-Branch and Bound;dificil;9;4;0,380;10464;52;52;24;11;38;true;concluido
-Branch and Bound;dificil;9;5;0,481;10464;52;52;24;11;38;true;concluido
-Branch and Bound;dificil;9;6;0,377;10464;52;52;24;11;38;true;concluido
-Branch and Bound;dificil;9;7;0,309;10464;52;52;24;11;38;true;concluido
-Branch and Bound;dificil;9;8;0,533;10464;52;52;24;11;38;true;concluido
-Branch and Bound;dificil;9;9;0,431;10464;52;52;24;11;38;true;concluido
-Branch and Bound;dificil;9;10;0,428;10464;52;52;24;11;38;true;concluido
-Dynamic Programming;dificil;9;1;0,203;25552;85;85;46;0;38;true;concluido
-Dynamic Programming;dificil;9;2;0,189;25552;85;85;46;0;38;true;concluido
-Dynamic Programming;dificil;9;3;0,285;25552;85;85;46;0;38;true;concluido
-Dynamic Programming;dificil;9;4;0,146;25552;85;85;46;0;38;true;concluido
-Dynamic Programming;dificil;9;5;0,157;25552;85;85;46;0;38;true;concluido
-Dynamic Programming;dificil;9;6;0,152;25552;85;85;46;0;38;true;concluido
-Dynamic Programming;dificil;9;7;0,165;25552;85;85;46;0;38;true;concluido
-Dynamic Programming;dificil;9;8;0,164;25552;85;85;46;0;38;true;concluido
-Dynamic Programming;dificil;9;9;0,226;25552;85;85;46;0;38;true;concluido
-Dynamic Programming;dificil;9;10;0,204;25552;85;85;46;0;38;true;concluido
-Backtracking;facil;4;1;0,081;192;5;5;0;0;4;true;concluido
-Backtracking;facil;4;2;0,011;192;5;5;0;0;4;true;concluido
-Backtracking;facil;4;3;0,010;192;5;5;0;0;4;true;concluido
-Backtracking;facil;4;4;0,011;192;5;5;0;0;4;true;concluido
-Backtracking;facil;4;5;0,009;192;5;5;0;0;4;true;concluido
-Backtracking;facil;4;6;0,010;192;5;5;0;0;4;true;concluido
-Backtracking;facil;4;7;0,010;192;5;5;0;0;4;true;concluido
-Backtracking;facil;4;8;0,010;192;5;5;0;0;4;true;concluido
-Backtracking;facil;4;9;0,009;192;5;5;0;0;4;true;concluido
-Backtracking;facil;4;10;0,011;192;5;5;0;0;4;true;concluido
-Branch and Bound;facil;4;1;0,040;544;5;5;0;0;4;true;concluido
-Branch and Bound;facil;4;2;0,017;544;5;5;0;0;4;true;concluido
-Branch and Bound;facil;4;3;0,018;544;5;5;0;0;4;true;concluido
-Branch and Bound;facil;4;4;0,018;544;5;5;0;0;4;true;concluido
-Branch and Bound;facil;4;5;0,020;544;5;5;0;0;4;true;concluido
-Branch and Bound;facil;4;6;0,018;544;5;5;0;0;4;true;concluido
-Branch and Bound;facil;4;7;0,019;544;5;5;0;0;4;true;concluido
-Branch and Bound;facil;4;8;0,019;544;5;5;0;0;4;true;concluido
-Branch and Bound;facil;4;9;0,020;544;5;5;0;0;4;true;concluido
-Branch and Bound;facil;4;10;0,025;544;5;5;0;0;4;true;concluido
-Dynamic Programming;facil;4;1;0,016;608;5;5;0;0;4;true;concluido
-Dynamic Programming;facil;4;2;0,183;608;5;5;0;0;4;true;concluido
-Dynamic Programming;facil;4;3;0,016;608;5;5;0;0;4;true;concluido
-Dynamic Programming;facil;4;4;0,017;608;5;5;0;0;4;true;concluido
-Dynamic Programming;facil;4;5;0,016;608;5;5;0;0;4;true;concluido
-Dynamic Programming;facil;4;6;0,035;608;5;5;0;0;4;true;concluido
-Dynamic Programming;facil;4;7;0,017;608;5;5;0;0;4;true;concluido
-Dynamic Programming;facil;4;8;0,016;608;5;5;0;0;4;true;concluido
-Dynamic Programming;facil;4;9;0,028;608;5;5;0;0;4;true;concluido
-Dynamic Programming;facil;4;10;0,037;608;5;5;0;0;4;true;concluido
-Backtracking;medio;4;1;0,012;384;9;9;0;0;8;true;concluido
-Backtracking;medio;4;2;0,007;384;9;9;0;0;8;true;concluido
-Backtracking;medio;4;3;0,011;384;9;9;0;0;8;true;concluido
-Backtracking;medio;4;4;0,009;384;9;9;0;0;8;true;concluido
-Backtracking;medio;4;5;0,012;384;9;9;0;0;8;true;concluido
-Backtracking;medio;4;6;0,010;384;9;9;0;0;8;true;concluido
-Backtracking;medio;4;7;0,012;384;9;9;0;0;8;true;concluido
-Backtracking;medio;4;8;0,013;384;9;9;0;0;8;true;concluido
-Backtracking;medio;4;9;0,011;384;9;9;0;0;8;true;concluido
-Backtracking;medio;4;10;0,011;384;9;9;0;0;8;true;concluido
-Branch and Bound;medio;4;1;0,028;1088;9;9;0;0;8;true;concluido
-Branch and Bound;medio;4;2;0,031;1088;9;9;0;0;8;true;concluido
-Branch and Bound;medio;4;3;0,031;1088;9;9;0;0;8;true;concluido
-Branch and Bound;medio;4;4;0,020;1088;9;9;0;0;8;true;concluido
-Branch and Bound;medio;4;5;0,022;1088;9;9;0;0;8;true;concluido
-Branch and Bound;medio;4;6;0,024;1088;9;9;0;0;8;true;concluido
-Branch and Bound;medio;4;7;0,024;1088;9;9;0;0;8;true;concluido
-Branch and Bound;medio;4;8;0,026;1088;9;9;0;0;8;true;concluido
-Branch and Bound;medio;4;9;0,043;1088;9;9;0;0;8;true;concluido
-Branch and Bound;medio;4;10;0,017;1088;9;9;0;0;8;true;concluido
-Dynamic Programming;medio;4;1;0,016;1152;9;9;0;0;8;true;concluido
-Dynamic Programming;medio;4;2;0,110;1152;9;9;0;0;8;true;concluido
-Dynamic Programming;medio;4;3;0,018;1152;9;9;0;0;8;true;concluido
-Dynamic Programming;medio;4;4;0,015;1152;9;9;0;0;8;true;concluido
-Dynamic Programming;medio;4;5;0,012;1152;9;9;0;0;8;true;concluido
-Dynamic Programming;medio;4;6;0,018;1152;9;9;0;0;8;true;concluido
-Dynamic Programming;medio;4;7;0,028;1152;9;9;0;0;8;true;concluido
-Dynamic Programming;medio;4;8;0,015;1152;9;9;0;0;8;true;concluido
-Dynamic Programming;medio;4;9;0,013;1152;9;9;0;0;8;true;concluido
-Dynamic Programming;medio;4;10;0,011;1152;9;9;0;0;8;true;concluido
-Backtracking;dificil;4;1;0,015;672;15;15;0;0;14;true;concluido
-Backtracking;dificil;4;2;0,011;672;15;15;0;0;14;true;concluido
-Backtracking;dificil;4;3;0,016;672;15;15;0;0;14;true;concluido
-Backtracking;dificil;4;4;0,010;672;15;15;0;0;14;true;concluido
-Backtracking;dificil;4;5;0,009;672;15;15;0;0;14;true;concluido
-Backtracking;dificil;4;6;0,013;672;15;15;0;0;14;true;concluido
-Backtracking;dificil;4;7;0,009;672;15;15;0;0;14;true;concluido
-Backtracking;dificil;4;8;0,012;672;15;15;0;0;14;true;concluido
-Backtracking;dificil;4;9;0,011;672;15;15;0;0;14;true;concluido
-Backtracking;dificil;4;10;0,009;672;15;15;0;0;14;true;concluido
-Branch and Bound;dificil;4;1;0,050;1904;15;15;0;0;14;true;concluido
-Branch and Bound;dificil;4;2;0,043;1904;15;15;0;0;14;true;concluido
-Branch and Bound;dificil;4;3;0,033;1904;15;15;0;0;14;true;concluido
-Branch and Bound;dificil;4;4;0,044;1904;15;15;0;0;14;true;concluido
-Branch and Bound;dificil;4;5;0,029;1904;15;15;0;0;14;true;concluido
-Branch and Bound;dificil;4;6;0,028;1904;15;15;0;0;14;true;concluido
-Branch and Bound;dificil;4;7;0,056;1904;15;15;0;0;14;true;concluido
-Branch and Bound;dificil;4;8;0,088;1904;15;15;0;0;14;true;concluido
-Branch and Bound;dificil;4;9;0,032;1904;15;15;0;0;14;true;concluido
-Branch and Bound;dificil;4;10;0,039;1904;15;15;0;0;14;true;concluido
-Dynamic Programming;dificil;4;1;0,022;1968;15;15;0;0;14;true;concluido
-Dynamic Programming;dificil;4;2;0,018;1968;15;15;0;0;14;true;concluido
-Dynamic Programming;dificil;4;3;0,017;1968;15;15;0;0;14;true;concluido
-Dynamic Programming;dificil;4;4;0,012;1968;15;15;0;0;14;true;concluido
-Dynamic Programming;dificil;4;5;0,016;1968;15;15;0;0;14;true;concluido
-Dynamic Programming;dificil;4;6;0,018;1968;15;15;0;0;14;true;concluido
-Dynamic Programming;dificil;4;7;0,017;1968;15;15;0;0;14;true;concluido
-Dynamic Programming;dificil;4;8;0,016;1968;15;15;0;0;14;true;concluido
-Dynamic Programming;dificil;4;9;0,016;1968;15;15;0;0;14;true;concluido
-Dynamic Programming;dificil;4;10;0,016;1968;15;15;0;0;14;true;concluido
+Backtracking;facil;9;1;6,858;3105856;70;70;50;0;19;true;concluido
+Backtracking;facil;9;2;1,249;3613280;70;70;50;0;19;true;concluido
+Backtracking;facil;9;3;0,791;3613280;70;70;50;0;19;true;concluido
+Backtracking;facil;9;4;0,292;3613280;70;70;50;0;19;true;concluido
+Backtracking;facil;9;5;0,235;3613280;70;70;50;0;19;true;concluido
+Backtracking;facil;9;6;0,111;3613280;70;70;50;0;19;true;concluido
+Backtracking;facil;9;7;0,226;3613280;70;70;50;0;19;true;concluido
+Backtracking;facil;9;8;0,100;4124800;70;70;50;0;19;true;concluido
+Backtracking;facil;9;9;0,100;4124800;70;70;50;0;19;true;concluido
+Backtracking;facil;9;10;0,108;4124800;70;70;50;0;19;true;concluido
+Branch and Bound;facil;9;1;1,427;4124800;32;32;22;10;19;true;concluido
+Branch and Bound;facil;9;2;1,054;4124800;32;32;22;10;19;true;concluido
+Branch and Bound;facil;9;3;0,420;4124800;32;32;22;10;19;true;concluido
+Branch and Bound;facil;9;4;0,306;4124800;32;32;22;10;19;true;concluido
+Branch and Bound;facil;9;5;0,256;4697640;32;32;22;10;19;true;concluido
+Branch and Bound;facil;9;6;0,416;4697640;32;32;22;10;19;true;concluido
+Branch and Bound;facil;9;7;0,392;4697640;32;32;22;10;19;true;concluido
+Branch and Bound;facil;9;8;0,344;4697640;32;32;22;10;19;true;concluido
+Branch and Bound;facil;9;9;0,252;4697640;32;32;22;10;19;true;concluido
+Branch and Bound;facil;9;10;0,319;4697640;32;32;22;10;19;true;concluido
+Dynamic Programming;facil;9;1;0,680;4697640;70;70;50;0;19;true;concluido
+Dynamic Programming;facil;9;2;0,765;5217352;70;70;50;0;19;true;concluido
+Dynamic Programming;facil;9;3;0,980;5217352;70;70;50;0;19;true;concluido
+Dynamic Programming;facil;9;4;0,460;5217352;70;70;50;0;19;true;concluido
+Dynamic Programming;facil;9;5;0,387;5217352;70;70;50;0;19;true;concluido
+Dynamic Programming;facil;9;6;0,549;5217352;70;70;50;0;19;true;concluido
+Dynamic Programming;facil;9;7;0,353;5217352;70;70;50;0;19;true;concluido
+Dynamic Programming;facil;9;8;0,222;5737064;70;70;50;0;19;true;concluido
+Dynamic Programming;facil;9;9;0,245;5737064;70;70;50;0;19;true;concluido
+Dynamic Programming;facil;9;10;0,319;5737064;70;70;50;0;19;true;concluido
+Backtracking;medio;9;1;0,325;5737064;86;86;57;0;28;true;concluido
+Backtracking;medio;9;2;0,266;5737064;86;86;57;0;28;true;concluido
+Backtracking;medio;9;3;0,574;5737064;86;86;57;0;28;true;concluido
+Backtracking;medio;9;4;0,209;6240400;86;86;57;0;28;true;concluido
+Backtracking;medio;9;5;0,165;6240400;86;86;57;0;28;true;concluido
+Backtracking;medio;9;6;0,568;6240400;86;86;57;0;28;true;concluido
+Backtracking;medio;9;7;0,222;6240400;86;86;57;0;28;true;concluido
+Backtracking;medio;9;8;0,242;6240400;86;86;57;0;28;true;concluido
+Backtracking;medio;9;9;0,197;6240400;86;86;57;0;28;true;concluido
+Backtracking;medio;9;10;0,219;6240400;86;86;57;0;28;true;concluido
+Branch and Bound;medio;9;1;0,587;6291456;39;39;16;6;28;true;concluido
+Branch and Bound;medio;9;2;0,440;6819376;39;39;16;6;28;true;concluido
+Branch and Bound;medio;9;3;1,206;6819376;39;39;16;6;28;true;concluido
+Branch and Bound;medio;9;4;0,446;6819376;39;39;16;6;28;true;concluido
+Branch and Bound;medio;9;5;0,383;6819376;39;39;16;6;28;true;concluido
+Branch and Bound;medio;9;6;0,383;6819376;39;39;16;6;28;true;concluido
+Branch and Bound;medio;9;7;0,404;6819376;39;39;16;6;28;true;concluido
+Branch and Bound;medio;9;8;0,419;6819376;39;39;16;6;28;true;concluido
+Branch and Bound;medio;9;9;0,341;7339176;39;39;16;6;28;true;concluido
+Branch and Bound;medio;9;10;0,342;7339176;39;39;16;6;28;true;concluido
+Dynamic Programming;medio;9;1;0,278;7339176;86;86;57;0;28;true;concluido
+Dynamic Programming;medio;9;2;0,153;7339176;86;86;57;0;28;true;concluido
+Dynamic Programming;medio;9;3;0,181;7339176;86;86;57;0;28;true;concluido
+Dynamic Programming;medio;9;4;0,348;7339176;86;86;57;0;28;true;concluido
+Dynamic Programming;medio;9;5;0,297;7842576;86;86;57;0;28;true;concluido
+Dynamic Programming;medio;9;6;0,302;7842576;86;86;57;0;28;true;concluido
+Dynamic Programming;medio;9;7;0,169;7842576;86;86;57;0;28;true;concluido
+Dynamic Programming;medio;9;8;0,391;7842576;86;86;57;0;28;true;concluido
+Dynamic Programming;medio;9;9;0,314;7842576;86;86;57;0;28;true;concluido
+Dynamic Programming;medio;9;10;0,399;7842576;86;86;57;0;28;true;concluido
+Backtracking;dificil;9;1;0,147;8362448;85;85;46;0;38;true;concluido
+Backtracking;dificil;9;2;0,117;8362448;85;85;46;0;38;true;concluido
+Backtracking;dificil;9;3;0,089;8362448;85;85;46;0;38;true;concluido
+Backtracking;dificil;9;4;0,080;8362448;85;85;46;0;38;true;concluido
+Backtracking;dificil;9;5;0,047;8362448;85;85;46;0;38;true;concluido
+Backtracking;dificil;9;6;0,045;8362448;85;85;46;0;38;true;concluido
+Backtracking;dificil;9;7;0,046;8362448;85;85;46;0;38;true;concluido
+Backtracking;dificil;9;8;0,061;8388608;85;85;46;0;38;true;concluido
+Backtracking;dificil;9;9;0,054;8916528;85;85;46;0;38;true;concluido
+Backtracking;dificil;9;10;0,046;8916528;85;85;46;0;38;true;concluido
+Branch and Bound;dificil;9;1;0,512;8916528;52;52;24;11;38;true;concluido
+Branch and Bound;dificil;9;2;0,653;8916528;52;52;24;11;38;true;concluido
+Branch and Bound;dificil;9;3;0,332;8916528;52;52;24;11;38;true;concluido
+Branch and Bound;dificil;9;4;0,255;8916528;52;52;24;11;38;true;concluido
+Branch and Bound;dificil;9;5;0,452;8916528;52;52;24;11;38;true;concluido
+Branch and Bound;dificil;9;6;0,578;9419864;52;52;24;11;38;true;concluido
+Branch and Bound;dificil;9;7;0,411;9419864;52;52;24;11;38;true;concluido
+Branch and Bound;dificil;9;8;0,712;9419864;52;52;24;11;38;true;concluido
+Branch and Bound;dificil;9;9;0,286;9419864;52;52;24;11;38;true;concluido
+Branch and Bound;dificil;9;10;0,249;9419864;52;52;24;11;38;true;concluido
+Dynamic Programming;dificil;9;1;0,116;9419864;85;85;46;0;38;true;concluido
+Dynamic Programming;dificil;9;2;0,287;9923232;85;85;46;0;38;true;concluido
+Dynamic Programming;dificil;9;3;0,113;9923232;85;85;46;0;38;true;concluido
+Dynamic Programming;dificil;9;4;0,116;9923232;85;85;46;0;38;true;concluido
+Dynamic Programming;dificil;9;5;0,146;9923232;85;85;46;0;38;true;concluido
+Dynamic Programming;dificil;9;6;0,103;9923232;85;85;46;0;38;true;concluido
+Dynamic Programming;dificil;9;7;0,182;9923232;85;85;46;0;38;true;concluido
+Dynamic Programming;dificil;9;8;0,106;10434752;85;85;46;0;38;true;concluido
+Dynamic Programming;dificil;9;9;0,123;10434752;85;85;46;0;38;true;concluido
+Dynamic Programming;dificil;9;10;0,172;10434752;85;85;46;0;38;true;concluido
+Backtracking;facil;4;1;0,012;10485760;5;5;0;0;4;true;concluido
+Backtracking;facil;4;2;0,010;11013680;5;5;0;0;4;true;concluido
+Backtracking;facil;4;3;0,011;11013680;5;5;0;0;4;true;concluido
+Backtracking;facil;4;4;0,086;11013680;5;5;0;0;4;true;concluido
+Backtracking;facil;4;5;0,014;11013680;5;5;0;0;4;true;concluido
+Backtracking;facil;4;6;0,013;11013680;5;5;0;0;4;true;concluido
+Backtracking;facil;4;7;0,011;11013680;5;5;0;0;4;true;concluido
+Backtracking;facil;4;8;0,014;11013680;5;5;0;0;4;true;concluido
+Backtracking;facil;4;9;0,012;11013680;5;5;0;0;4;true;concluido
+Backtracking;facil;4;10;0,012;11013680;5;5;0;0;4;true;concluido
+Branch and Bound;facil;4;1;0,041;11533392;5;5;0;0;4;true;concluido
+Branch and Bound;facil;4;2;0,023;11533392;5;5;0;0;4;true;concluido
+Branch and Bound;facil;4;3;0,023;11533392;5;5;0;0;4;true;concluido
+Branch and Bound;facil;4;4;0,025;11533392;5;5;0;0;4;true;concluido
+Branch and Bound;facil;4;5;0,026;11533392;5;5;0;0;4;true;concluido
+Branch and Bound;facil;4;6;0,024;11533392;5;5;0;0;4;true;concluido
+Branch and Bound;facil;4;7;0,023;11533392;5;5;0;0;4;true;concluido
+Branch and Bound;facil;4;8;0,027;11533392;5;5;0;0;4;true;concluido
+Branch and Bound;facil;4;9;0,022;11533392;5;5;0;0;4;true;concluido
+Branch and Bound;facil;4;10;0,020;11533392;5;5;0;0;4;true;concluido
+Dynamic Programming;facil;4;1;0,017;12053104;5;5;0;0;4;true;concluido
+Dynamic Programming;facil;4;2;0,019;12053104;5;5;0;0;4;true;concluido
+Dynamic Programming;facil;4;3;0,016;12053104;5;5;0;0;4;true;concluido
+Dynamic Programming;facil;4;4;0,015;12053104;5;5;0;0;4;true;concluido
+Dynamic Programming;facil;4;5;0,021;12053104;5;5;0;0;4;true;concluido
+Dynamic Programming;facil;4;6;0,024;12053104;5;5;0;0;4;true;concluido
+Dynamic Programming;facil;4;7;0,017;12053104;5;5;0;0;4;true;concluido
+Dynamic Programming;facil;4;8;0,015;12053104;5;5;0;0;4;true;concluido
+Dynamic Programming;facil;4;9;0,013;12053104;5;5;0;0;4;true;concluido
+Dynamic Programming;facil;4;10;0,015;12581024;5;5;0;0;4;true;concluido
+Backtracking;medio;4;1;0,015;12581024;9;9;0;0;8;true;concluido
+Backtracking;medio;4;2;0,013;12581024;9;9;0;0;8;true;concluido
+Backtracking;medio;4;3;0,014;12581024;9;9;0;0;8;true;concluido
+Backtracking;medio;4;4;0,019;12581024;9;9;0;0;8;true;concluido
+Backtracking;medio;4;5;0,015;12581024;9;9;0;0;8;true;concluido
+Backtracking;medio;4;6;0,013;12581024;9;9;0;0;8;true;concluido
+Backtracking;medio;4;7;0,018;12581024;9;9;0;0;8;true;concluido
+Backtracking;medio;4;8;0,010;12581024;9;9;0;0;8;true;concluido
+Backtracking;medio;4;9;0,007;13094432;9;9;0;0;8;true;concluido
+Backtracking;medio;4;10;0,007;13094432;9;9;0;0;8;true;concluido
+Branch and Bound;medio;4;1;0,048;13094432;9;9;0;0;8;true;concluido
+Branch and Bound;medio;4;2;0,033;13094432;9;9;0;0;8;true;concluido
+Branch and Bound;medio;4;3;0,269;13094432;9;9;0;0;8;true;concluido
+Branch and Bound;medio;4;4;0,037;13094432;9;9;0;0;8;true;concluido
+Branch and Bound;medio;4;5;0,032;13094432;9;9;0;0;8;true;concluido
+Branch and Bound;medio;4;6;0,017;13094432;9;9;0;0;8;true;concluido
+Branch and Bound;medio;4;7;0,037;13094432;9;9;0;0;8;true;concluido
+Branch and Bound;medio;4;8;0,027;13605952;9;9;0;0;8;true;concluido
+Branch and Bound;medio;4;9;0,027;13605952;9;9;0;0;8;true;concluido
+Branch and Bound;medio;4;10;0,031;13605952;9;9;0;0;8;true;concluido
+Dynamic Programming;medio;4;1;0,021;13605952;9;9;0;0;8;true;concluido
+Dynamic Programming;medio;4;2;0,021;13605952;9;9;0;0;8;true;concluido
+Dynamic Programming;medio;4;3;0,027;13605952;9;9;0;0;8;true;concluido
+Dynamic Programming;medio;4;4;0,021;13605952;9;9;0;0;8;true;concluido
+Dynamic Programming;medio;4;5;0,021;13605952;9;9;0;0;8;true;concluido
+Dynamic Programming;medio;4;6;0,204;13605952;9;9;0;0;8;true;concluido
+Dynamic Programming;medio;4;7;0,023;14117472;9;9;0;0;8;true;concluido
+Dynamic Programming;medio;4;8;0,051;14117472;9;9;0;0;8;true;concluido
+Dynamic Programming;medio;4;9;0,029;14117472;9;9;0;0;8;true;concluido
+Dynamic Programming;medio;4;10;0,017;14117472;9;9;0;0;8;true;concluido
+Backtracking;dificil;4;1;0,020;14117472;15;15;0;0;14;true;concluido
+Backtracking;dificil;4;2;0,018;14117472;15;15;0;0;14;true;concluido
+Backtracking;dificil;4;3;0,017;14117472;15;15;0;0;14;true;concluido
+Backtracking;dificil;4;4;0,013;14117472;15;15;0;0;14;true;concluido
+Backtracking;dificil;4;5;0,030;14117472;15;15;0;0;14;true;concluido
+Backtracking;dificil;4;6;0,017;14628992;15;15;0;0;14;true;concluido
+Backtracking;dificil;4;7;0,017;14628992;15;15;0;0;14;true;concluido
+Backtracking;dificil;4;8;0,011;14628992;15;15;0;0;14;true;concluido
+Backtracking;dificil;4;9;0,015;14628992;15;15;0;0;14;true;concluido
+Backtracking;dificil;4;10;0,016;14628992;15;15;0;0;14;true;concluido
+Branch and Bound;dificil;4;1;0,024;14628992;15;15;0;0;14;true;concluido
+Branch and Bound;dificil;4;2;0,023;14628992;15;15;0;0;14;true;concluido
+Branch and Bound;dificil;4;3;0,021;14628992;15;15;0;0;14;true;concluido
+Branch and Bound;dificil;4;4;0,020;14628992;15;15;0;0;14;true;concluido
+Branch and Bound;dificil;4;5;0,018;14680064;15;15;0;0;14;true;concluido
+Branch and Bound;dificil;4;6;0,019;15183408;15;15;0;0;14;true;concluido
+Branch and Bound;dificil;4;7;0,018;15183408;15;15;0;0;14;true;concluido
+Branch and Bound;dificil;4;8;0,018;15183408;15;15;0;0;14;true;concluido
+Branch and Bound;dificil;4;9;0,018;15183408;15;15;0;0;14;true;concluido
+Branch and Bound;dificil;4;10;0,025;15183408;15;15;0;0;14;true;concluido
+Dynamic Programming;dificil;4;1;0,035;15183408;15;15;0;0;14;true;concluido
+Dynamic Programming;dificil;4;2;0,018;15183408;15;15;0;0;14;true;concluido
+Dynamic Programming;dificil;4;3;0,016;15183408;15;15;0;0;14;true;concluido
+Dynamic Programming;dificil;4;4;0,012;15183408;15;15;0;0;14;true;concluido
+Dynamic Programming;dificil;4;5;0,019;15703120;15;15;0;0;14;true;concluido
+Dynamic Programming;dificil;4;6;0,017;15703120;15;15;0;0;14;true;concluido
+Dynamic Programming;dificil;4;7;0,012;15703120;15;15;0;0;14;true;concluido
+Dynamic Programming;dificil;4;8;0,020;15703120;15;15;0;0;14;true;concluido
+Dynamic Programming;dificil;4;9;0,021;15703120;15;15;0;0;14;true;concluido
+Dynamic Programming;dificil;4;10;0,020;15703120;15;15;0;0;14;true;concluido
+Backtracking;facil;9;1;0,053;15703120;70;70;50;0;19;true;concluido
+Backtracking;facil;9;2;0,052;15703120;70;70;50;0;19;true;concluido
+Backtracking;facil;9;3;0,055;16222832;70;70;50;0;19;true;concluido
+Backtracking;facil;9;4;0,060;16222832;70;70;50;0;19;true;concluido
+Backtracking;facil;9;5;0,045;16222832;70;70;50;0;19;true;concluido
+Backtracking;facil;9;6;0,064;16222832;70;70;50;0;19;true;concluido
+Backtracking;facil;9;7;0,053;16222832;70;70;50;0;19;true;concluido
+Backtracking;facil;9;8;0,051;16222832;70;70;50;0;19;true;concluido
+Backtracking;facil;9;9;0,041;16222832;70;70;50;0;19;true;concluido
+Backtracking;facil;9;10;0,081;16222832;70;70;50;0;19;true;concluido
+Branch and Bound;facil;9;1;0,178;16726200;32;32;22;10;19;true;concluido
+Branch and Bound;facil;9;2;0,208;16726200;32;32;22;10;19;true;concluido
+Branch and Bound;facil;9;3;0,194;16726200;32;32;22;10;19;true;concluido
+Branch and Bound;facil;9;4;0,226;16726200;32;32;22;10;19;true;concluido
+Branch and Bound;facil;9;5;0,214;16726200;32;32;22;10;19;true;concluido
+Branch and Bound;facil;9;6;0,298;16726200;32;32;22;10;19;true;concluido
+Branch and Bound;facil;9;7;0,485;16726200;32;32;22;10;19;true;concluido
+Branch and Bound;facil;9;8;0,530;16777216;32;32;22;10;19;true;concluido
+Branch and Bound;facil;9;9;0,142;17296928;32;32;22;10;19;true;concluido
+Branch and Bound;facil;9;10;0,208;17296928;32;32;22;10;19;true;concluido
+Dynamic Programming;facil;9;1;0,100;17296928;70;70;50;0;19;true;concluido
+Dynamic Programming;facil;9;2;0,103;17296928;70;70;50;0;19;true;concluido
+Dynamic Programming;facil;9;3;0,085;17296928;70;70;50;0;19;true;concluido
+Dynamic Programming;facil;9;4;0,086;17296928;70;70;50;0;19;true;concluido
+Dynamic Programming;facil;9;5;0,069;17808448;70;70;50;0;19;true;concluido
+Dynamic Programming;facil;9;6;0,086;17808448;70;70;50;0;19;true;concluido
+Dynamic Programming;facil;9;7;0,068;17808448;70;70;50;0;19;true;concluido
+Dynamic Programming;facil;9;8;0,075;17808448;70;70;50;0;19;true;concluido
+Dynamic Programming;facil;9;9;0,107;17808448;70;70;50;0;19;true;concluido
+Dynamic Programming;facil;9;10;0,069;17808448;70;70;50;0;19;true;concluido
+Backtracking;medio;9;1;0,193;18311784;86;86;57;0;28;true;concluido
+Backtracking;medio;9;2;0,050;18311784;86;86;57;0;28;true;concluido
+Backtracking;medio;9;3;0,076;18311784;86;86;57;0;28;true;concluido
+Backtracking;medio;9;4;0,061;18311784;86;86;57;0;28;true;concluido
+Backtracking;medio;9;5;0,080;18311784;86;86;57;0;28;true;concluido
+Backtracking;medio;9;6;0,053;18311784;86;86;57;0;28;true;concluido
+Backtracking;medio;9;7;0,074;18311784;86;86;57;0;28;true;concluido
+Backtracking;medio;9;8;0,064;18831544;86;86;57;0;28;true;concluido
+Backtracking;medio;9;9;0,052;18831544;86;86;57;0;28;true;concluido
+Backtracking;medio;9;10;0,063;18831544;86;86;57;0;28;true;concluido
+Branch and Bound;medio;9;1;0,144;18831544;39;39;16;6;28;true;concluido
+Branch and Bound;medio;9;2;0,148;18831544;39;39;16;6;28;true;concluido
+Branch and Bound;medio;9;3;0,273;18831544;39;39;16;6;28;true;concluido
+Branch and Bound;medio;9;4;0,159;18831544;39;39;16;6;28;true;concluido
+Branch and Bound;medio;9;5;0,127;18831544;39;39;16;6;28;true;concluido
+Branch and Bound;medio;9;6;0,131;19394112;39;39;16;6;28;true;concluido
+Branch and Bound;medio;9;7;0,202;19394112;39;39;16;6;28;true;concluido
+Branch and Bound;medio;9;8;0,138;19394112;39;39;16;6;28;true;concluido
+Branch and Bound;medio;9;9;0,200;19394112;39;39;16;6;28;true;concluido
+Branch and Bound;medio;9;10;0,132;19394112;39;39;16;6;28;true;concluido
+Dynamic Programming;medio;9;1;0,146;19394112;86;86;57;0;28;true;concluido
+Dynamic Programming;medio;9;2;0,149;19394112;86;86;57;0;28;true;concluido
+Dynamic Programming;medio;9;3;0,112;19897720;86;86;57;0;28;true;concluido
+Dynamic Programming;medio;9;4;0,184;19897720;86;86;57;0;28;true;concluido
+Dynamic Programming;medio;9;5;0,162;19897720;86;86;57;0;28;true;concluido
+Dynamic Programming;medio;9;6;0,135;19897720;86;86;57;0;28;true;concluido
+Dynamic Programming;medio;9;7;0,180;19897720;86;86;57;0;28;true;concluido
+Dynamic Programming;medio;9;8;0,272;20401136;86;86;57;0;28;true;concluido
+Dynamic Programming;medio;9;9;0,118;20401136;86;86;57;0;28;true;concluido
+Dynamic Programming;medio;9;10;0,100;20401136;86;86;57;0;28;true;concluido
+Backtracking;dificil;9;1;0,048;20401136;85;85;46;0;38;true;concluido
+Backtracking;dificil;9;2;0,056;20401136;85;85;46;0;38;true;concluido
+Backtracking;dificil;9;3;0,055;20401136;85;85;46;0;38;true;concluido
+Backtracking;dificil;9;4;0,095;20401136;85;85;46;0;38;true;concluido
+Backtracking;dificil;9;5;0,086;20912656;85;85;46;0;38;true;concluido
+Backtracking;dificil;9;6;0,093;20912656;85;85;46;0;38;true;concluido
+Backtracking;dificil;9;7;0,087;20912656;85;85;46;0;38;true;concluido
+Backtracking;dificil;9;8;0,057;20912656;85;85;46;0;38;true;concluido
+Backtracking;dificil;9;9;0,121;20912656;85;85;46;0;38;true;concluido
+Backtracking;dificil;9;10;0,060;20912656;85;85;46;0;38;true;concluido
+Branch and Bound;dificil;9;1;0,355;20912656;52;52;24;11;38;true;concluido
+Branch and Bound;dificil;9;2;0,229;20971520;52;52;24;11;38;true;concluido
+Branch and Bound;dificil;9;3;0,534;21491232;52;52;24;11;38;true;concluido
+Branch and Bound;dificil;9;4;0,208;21491232;52;52;24;11;38;true;concluido
+Branch and Bound;dificil;9;5;0,500;21491232;52;52;24;11;38;true;concluido
+Branch and Bound;dificil;9;6;0,200;21491232;52;52;24;11;38;true;concluido
+Branch and Bound;dificil;9;7;0,197;21491232;52;52;24;11;38;true;concluido
+Branch and Bound;dificil;9;8;0,492;21491232;52;52;24;11;38;true;concluido
+Branch and Bound;dificil;9;9;0,570;21491232;52;52;24;11;38;true;concluido
+Branch and Bound;dificil;9;10;0,384;22010944;52;52;24;11;38;true;concluido
+Dynamic Programming;dificil;9;1;0,095;22010944;85;85;46;0;38;true;concluido
+Dynamic Programming;dificil;9;2;0,205;22010944;85;85;46;0;38;true;concluido
+Dynamic Programming;dificil;9;3;0,156;22010944;85;85;46;0;38;true;concluido
+Dynamic Programming;dificil;9;4;0,194;22010944;85;85;46;0;38;true;concluido
+Dynamic Programming;dificil;9;5;0,150;22010944;85;85;46;0;38;true;concluido
+Dynamic Programming;dificil;9;6;0,196;22522464;85;85;46;0;38;true;concluido
+Dynamic Programming;dificil;9;7;0,187;22522464;85;85;46;0;38;true;concluido
+Dynamic Programming;dificil;9;8;0,069;22522464;85;85;46;0;38;true;concluido
+Dynamic Programming;dificil;9;9;0,173;22522464;85;85;46;0;38;true;concluido
+Dynamic Programming;dificil;9;10;0,178;22522464;85;85;46;0;38;true;concluido
+Backtracking;facil;16;1;0,561;23025808;76;76;15;0;60;true;concluido
+Backtracking;facil;16;2;0,373;23025808;76;76;15;0;60;true;concluido
+Backtracking;facil;16;3;0,337;23025808;76;76;15;0;60;true;concluido
+Backtracking;facil;16;4;0,511;23025808;76;76;15;0;60;true;concluido
+Backtracking;facil;16;5;0,130;23025808;76;76;15;0;60;true;concluido
+Backtracking;facil;16;6;0,156;23025808;76;76;15;0;60;true;concluido
+Backtracking;facil;16;7;0,091;23068672;76;76;15;0;60;true;concluido
+Backtracking;facil;16;8;0,134;23588384;76;76;15;0;60;true;concluido
+Backtracking;facil;16;9;0,160;23588384;76;76;15;0;60;true;concluido
+Backtracking;facil;16;10;0,155;23588384;76;76;15;0;60;true;concluido
+Branch and Bound;facil;16;1;0,574;23588384;61;61;1;1;60;true;concluido
+Branch and Bound;facil;16;2;1,260;23588384;61;61;1;1;60;true;concluido
+Branch and Bound;facil;16;3;1,143;24091720;61;61;1;1;60;true;concluido
+Branch and Bound;facil;16;4;0,852;24091720;61;61;1;1;60;true;concluido
+Branch and Bound;facil;16;5;0,703;24091720;61;61;1;1;60;true;concluido
+Branch and Bound;facil;16;6;2,085;24091720;61;61;1;1;60;true;concluido
+Branch and Bound;facil;16;7;0,723;24091720;61;61;1;1;60;true;concluido
+Branch and Bound;facil;16;8;0,656;24595120;61;61;1;1;60;true;concluido
+Branch and Bound;facil;16;9;0,594;24595120;61;61;1;1;60;true;concluido
+Branch and Bound;facil;16;10;0,494;24595120;61;61;1;1;60;true;concluido
+Dynamic Programming;facil;16;1;0,105;24595120;76;76;15;0;60;true;concluido
+Dynamic Programming;facil;16;2;0,197;24595120;76;76;15;0;60;true;concluido
+Dynamic Programming;facil;16;3;0,201;25114856;76;76;15;0;60;true;concluido
+Dynamic Programming;facil;16;4;0,334;25114856;76;76;15;0;60;true;concluido
+Dynamic Programming;facil;16;5;0,183;25114856;76;76;15;0;60;true;concluido
+Dynamic Programming;facil;16;6;0,293;25114856;76;76;15;0;60;true;concluido
+Dynamic Programming;facil;16;7;3,349;25165824;76;76;15;0;60;true;concluido
+Dynamic Programming;facil;16;8;0,105;2115896;76;76;15;0;60;true;concluido
+Dynamic Programming;facil;16;9;0,184;2115896;76;76;15;0;60;true;concluido
+Dynamic Programming;facil;16;10;0,202;2115896;76;76;15;0;60;true;concluido
+Backtracking;medio;16;1;0,185;2566200;129;129;0;0;128;true;concluido
+Backtracking;medio;16;2;0,145;2566200;129;129;0;0;128;true;concluido
+Backtracking;medio;16;3;0,149;2566200;129;129;0;0;128;true;concluido
+Backtracking;medio;16;4;0,203;2566200;129;129;0;0;128;true;concluido
+Backtracking;medio;16;5;0,181;2566200;129;129;0;0;128;true;concluido
+Backtracking;medio;16;6;0,292;3016440;129;129;0;0;128;true;concluido
+Backtracking;medio;16;7;0,114;3016440;129;129;0;0;128;true;concluido
+Backtracking;medio;16;8;0,324;3016440;129;129;0;0;128;true;concluido
+Backtracking;medio;16;9;0,236;3016440;129;129;0;0;128;true;concluido
+Backtracking;medio;16;10;0,169;3016440;129;129;0;0;128;true;concluido
+Branch and Bound;medio;16;1;3,514;3478752;129;129;0;0;128;true;concluido
+Branch and Bound;medio;16;2;3,907;3478752;129;129;0;0;128;true;concluido
+Branch and Bound;medio;16;3;4,341;3478752;129;129;0;0;128;true;concluido
+Branch and Bound;medio;16;4;3,260;3478752;129;129;0;0;128;true;concluido
+Branch and Bound;medio;16;5;3,117;3928936;129;129;0;0;128;true;concluido
+Branch and Bound;medio;16;6;3,677;3928936;129;129;0;0;128;true;concluido
+Branch and Bound;medio;16;7;4,032;3928936;129;129;0;0;128;true;concluido
+Branch and Bound;medio;16;8;3,836;3928936;129;129;0;0;128;true;concluido
+Branch and Bound;medio;16;9;4,309;3928936;129;129;0;0;128;true;concluido
+Branch and Bound;medio;16;10;4,371;4395496;129;129;0;0;128;true;concluido
+Dynamic Programming;medio;16;1;0,172;4395496;129;129;0;0;128;true;concluido
+Dynamic Programming;medio;16;2;0,244;4395496;129;129;0;0;128;true;concluido
+Dynamic Programming;medio;16;3;0,183;4853864;129;129;0;0;128;true;concluido
+Dynamic Programming;medio;16;4;0,195;4853864;129;129;0;0;128;true;concluido
+Dynamic Programming;medio;16;5;0,302;5304296;129;129;0;0;128;true;concluido
+Dynamic Programming;medio;16;6;0,275;5304296;129;129;0;0;128;true;concluido
+Dynamic Programming;medio;16;7;0,247;5304296;129;129;0;0;128;true;concluido
+Dynamic Programming;medio;16;8;0,253;5575904;129;129;0;0;128;true;concluido
+Dynamic Programming;medio;16;9;0,221;5575904;129;129;0;0;128;true;concluido
+Dynamic Programming;medio;16;10;0,245;6026168;129;129;0;0;128;true;concluido
+Backtracking;dificil;16;1;0,429;6256872;197;197;4;0;192;true;concluido
+Backtracking;dificil;16;2;0,572;6256872;197;197;4;0;192;true;concluido
+Backtracking;dificil;16;3;0,274;6256872;197;197;4;0;192;true;concluido
+Backtracking;dificil;16;4;0,304;6707056;197;197;4;0;192;true;concluido
+Backtracking;dificil;16;5;0,288;6707056;197;197;4;0;192;true;concluido
+Backtracking;dificil;16;6;0,311;6707056;197;197;4;0;192;true;concluido
+Backtracking;dificil;16;7;0,289;6707056;197;197;4;0;192;true;concluido
+Backtracking;dificil;16;8;0,305;6707056;197;197;4;0;192;true;concluido
+Backtracking;dificil;16;9;0,278;7165424;197;197;4;0;192;true;concluido
+Backtracking;dificil;16;10;0,268;7165424;197;197;4;0;192;true;concluido
+Branch and Bound;dificil;16;1;10,939;7165424;193;193;4;4;192;true;concluido
+Branch and Bound;dificil;16;2;11,997;7165424;193;193;4;4;192;true;concluido
+Branch and Bound;dificil;16;3;9,203;7632040;193;193;4;4;192;true;concluido
+Branch and Bound;dificil;16;4;8,832;7632040;193;193;4;4;192;true;concluido
+Branch and Bound;dificil;16;5;7,263;7632040;193;193;4;4;192;true;concluido
+Branch and Bound;dificil;16;6;8,365;7632040;193;193;4;4;192;true;concluido
+Branch and Bound;dificil;16;7;7,348;8123304;193;193;4;4;192;true;concluido
+Branch and Bound;dificil;16;8;7,208;8123304;193;193;4;4;192;true;concluido
+Branch and Bound;dificil;16;9;9,945;8123304;193;193;4;4;192;true;concluido
+Branch and Bound;dificil;16;10;12,433;8123304;193;193;4;4;192;true;concluido
+Dynamic Programming;dificil;16;1;0,211;8573488;197;197;4;0;192;true;concluido
+Dynamic Programming;dificil;16;2;0,455;8573488;197;197;4;0;192;true;concluido
+Dynamic Programming;dificil;16;3;0,333;9023920;197;197;4;0;192;true;concluido
+Dynamic Programming;dificil;16;4;0,439;9023920;197;197;4;0;192;true;concluido
+Dynamic Programming;dificil;16;5;0,455;9474352;197;197;4;0;192;true;concluido
+Dynamic Programming;dificil;16;6;0,442;9474352;197;197;4;0;192;true;concluido
+Dynamic Programming;dificil;16;7;0,294;9474352;197;197;4;0;192;true;concluido
+Dynamic Programming;dificil;16;8;0,290;9770208;197;197;4;0;192;true;concluido
+Dynamic Programming;dificil;16;9;0,434;10220640;197;197;4;0;192;true;concluido
+Dynamic Programming;dificil;16;10;0,324;10220640;197;197;4;0;192;true;concluido
+Backtracking;facil;25;1;12,306;11571280;9714;9714;9566;0;147;true;concluido
+Backtracking;facil;25;2;12,754;12767784;9714;9714;9566;0;147;true;concluido
+Backtracking;facil;25;3;12,280;13668216;9714;9714;9566;0;147;true;concluido
+Backtracking;facil;25;4;12,179;14864928;9714;9714;9566;0;147;true;concluido
+Backtracking;facil;25;5;6,583;15765352;9714;9714;9566;0;147;true;concluido
+Backtracking;facil;25;6;12,933;16962088;9714;9714;9566;0;147;true;concluido
+Backtracking;facil;25;7;10,748;18158816;9714;9714;9566;0;147;true;concluido
+Backtracking;facil;25;8;9,671;19059232;9714;9714;9566;0;147;true;concluido
+Backtracking;facil;25;9;11,076;20255968;9714;9714;9566;0;147;true;concluido
+Backtracking;facil;25;10;11,796;21606568;9714;9714;9566;0;147;true;concluido
+Branch and Bound;facil;25;1;51,780;21606568;527;527;695;316;147;true;concluido
+Branch and Bound;facil;25;2;65,079;22073128;527;527;695;316;147;true;concluido
+Branch and Bound;facil;25;3;42,078;22353120;527;527;695;316;147;true;concluido
+Branch and Bound;facil;25;4;48,035;22353120;527;527;695;316;147;true;concluido
+Branch and Bound;facil;25;5;47,473;22803312;527;527;695;316;147;true;concluido
+Branch and Bound;facil;25;6;42,333;23253520;527;527;695;316;147;true;concluido
+Branch and Bound;facil;25;7;54,359;23253520;527;527;695;316;147;true;concluido
+Branch and Bound;facil;25;8;56,344;23703728;527;527;695;316;147;true;concluido
+Branch and Bound;facil;25;9;63,563;23703728;527;527;695;316;147;true;concluido
+Branch and Bound;facil;25;10;46,777;24153912;527;527;695;316;147;true;concluido
+Dynamic Programming;facil;25;1;45,170;28644576;9714;9714;9566;0;147;true;concluido
+Dynamic Programming;facil;25;2;39,267;26806176;9714;9714;9566;0;147;true;concluido
+Dynamic Programming;facil;25;3;39,357;40866936;9714;9714;9566;0;147;true;concluido
+Dynamic Programming;facil;25;4;46,048;55054384;9714;9714;9566;0;147;true;concluido
+Dynamic Programming;facil;25;5;63,655;58263456;9714;9714;9566;0;147;true;concluido
+Dynamic Programming;facil;25;6;57,531;27465936;9714;9714;9566;0;147;true;concluido
+Dynamic Programming;facil;25;7;37,928;42146000;9714;9714;9566;0;147;true;concluido
+Dynamic Programming;facil;25;8;31,684;55777488;9714;9714;9566;0;147;true;concluido
+Dynamic Programming;facil;25;9;33,455;69408976;9714;9714;9566;0;147;true;concluido
+Dynamic Programming;facil;25;10;27,581;80943312;9714;9714;9566;0;147;true;concluido
+Backtracking;medio;25;1;79,078;20238416;100000;100000;99933;0;73;false;nao_concluido
+Backtracking;medio;25;2;150,848;35967056;100000;100000;99933;0;73;false;nao_concluido
+Backtracking;medio;25;3;135,148;51695696;100000;100000;99933;0;73;false;nao_concluido
+Backtracking;medio;25;4;165,796;66375760;100000;100000;99933;0;73;false;nao_concluido
+Backtracking;medio;25;5;74,142;76861520;100000;100000;99933;0;73;false;nao_concluido
+Backtracking;medio;25;6;90,645;87347280;100000;100000;99933;0;73;false;nao_concluido
+Backtracking;medio;25;7;96,985;98881616;100000;100000;99933;0;73;false;nao_concluido
+Backtracking;medio;25;8;111,222;108318800;100000;100000;99933;0;73;false;nao_concluido
+Backtracking;medio;25;9;74,944;13138688;100000;100000;99933;0;73;false;nao_concluido
+Backtracking;medio;25;10;68,576;23624448;100000;100000;99933;0;73;false;nao_concluido
+Branch and Bound;medio;25;1;9999,584;33061632;31523;31523;52522;21068;72;false;nao_concluido
+Branch and Bound;medio;25;2;9999,696;42498816;32395;32395;53955;21628;72;false;nao_concluido
+Branch and Bound;medio;25;3;10000,851;51936000;32087;32087;53451;21434;72;false;nao_concluido
+Branch and Bound;medio;25;4;9999,319;61373184;31039;31039;51737;20768;72;false;nao_concluido
+Branch and Bound;medio;25;5;10000,796;70810368;30855;30855;51424;20639;72;false;nao_concluido
+Branch and Bound;medio;25;6;9999,638;80247552;30403;30403;50662;20328;72;false;nao_concluido
+Branch and Bound;medio;25;7;10000,369;89684736;31369;31369;52274;20975;72;false;nao_concluido
+Branch and Bound;medio;25;8;10000,235;99121920;31438;31438;52387;21018;72;false;nao_concluido
+Branch and Bound;medio;25;9;9999,780;107510528;30985;30985;51645;20728;72;false;nao_concluido
+Branch and Bound;medio;25;10;9998,847;115899136;26067;26067;43469;17472;72;false;nao_concluido
+Dynamic Programming;medio;25;1;398,395;146307840;100000;100000;99932;0;73;false;nao_concluido
+Dynamic Programming;medio;25;2;498,857;183500800;100000;100000;99932;0;73;false;nao_concluido
+Dynamic Programming;medio;25;3;508,591;254803968;100000;100000;99932;0;73;false;nao_concluido
+Dynamic Programming;medio;25;4;491,914;223090336;100000;100000;99932;0;73;false;nao_concluido
+Dynamic Programming;medio;25;5;485,157;305135616;100000;100000;99932;0;73;false;nao_concluido
+Dynamic Programming;medio;25;6;417,461;222298112;100000;100000;99932;0;73;false;nao_concluido
+Dynamic Programming;medio;25;7;362,646;279833528;100000;100000;99932;0;73;false;nao_concluido
+Dynamic Programming;medio;25;8;316,646;233696184;100000;100000;99932;0;73;false;nao_concluido
+Dynamic Programming;medio;25;9;435,806;256901120;100000;100000;99932;0;73;false;nao_concluido
+Dynamic Programming;medio;25;10;427,892;236929832;100000;100000;99932;0;73;false;nao_concluido
+Backtracking;dificil;25;1;109,055;117392168;100000;100000;99929;0;72;false;nao_concluido
+Backtracking;dificil;25;2;114,229;127877928;100000;100000;99929;0;72;false;nao_concluido
+Backtracking;dificil;25;3;101,338;138363688;100000;100000;99929;0;72;false;nao_concluido
+Backtracking;dificil;25;4;76,291;148849448;100000;100000;99929;0;72;false;nao_concluido
+Backtracking;dificil;25;5;132,738;159335208;100000;100000;99929;0;72;false;nao_concluido
+Backtracking;dificil;25;6;110,661;169820968;100000;100000;99929;0;72;false;nao_concluido
+Backtracking;dificil;25;7;151,489;180306728;100000;100000;99929;0;72;false;nao_concluido
+Backtracking;dificil;25;8;137,422;190792488;100000;100000;99929;0;72;false;nao_concluido
+Backtracking;dificil;25;9;102,374;201278248;100000;100000;99929;0;72;false;nao_concluido
+Backtracking;dificil;25;10;112,709;211764008;100000;100000;99929;0;72;false;nao_concluido
+Branch and Bound;dificil;25;1;9999,462;214909736;11271;11271;19882;8680;69;false;nao_concluido
+Branch and Bound;dificil;25;2;10000,730;218055464;7856;7856;13006;5195;48;false;nao_concluido
+Branch and Bound;dificil;25;3;9999,248;220152616;6536;6536;10870;4379;48;false;nao_concluido
+Branch and Bound;dificil;25;4;9999,436;222249768;6161;6161;10270;4154;48;false;nao_concluido
+Branch and Bound;dificil;25;5;10000,652;224346920;5746;5746;9602;3901;48;false;nao_concluido
+Branch and Bound;dificil;25;6;9999,613;225395496;5801;5801;9692;3938;48;false;nao_concluido
+Branch and Bound;dificil;25;7;10001,735;227492648;6102;6102;10162;4106;48;false;nao_concluido
+Branch and Bound;dificil;25;8;10000,395;229589800;5958;5958;9940;4029;48;false;nao_concluido
+Branch and Bound;dificil;25;9;9999,167;231686952;6565;6565;10921;4402;48;false;nao_concluido
+Branch and Bound;dificil;25;10;9998,797;233784104;6662;6662;11084;4468;48;false;nao_concluido
+Dynamic Programming;dificil;25;1;646,721;244269864;100000;100000;99928;0;72;false;nao_concluido
+Dynamic Programming;dificil;25;2;409,952;208111056;100000;100000;99928;0;72;false;nao_concluido
+Dynamic Programming;dificil;25;3;338,796;249416432;100000;100000;99928;0;72;false;nao_concluido
+Dynamic Programming;dificil;25;4;407,952;244318208;100000;100000;99928;0;72;false;nao_concluido
+Dynamic Programming;dificil;25;5;307,358;226492416;100000;100000;99928;0;72;false;nao_concluido
+Dynamic Programming;dificil;25;6;320,630;257949696;100000;100000;99928;0;72;false;nao_concluido
+Dynamic Programming;dificil;25;7;444,739;287397856;100000;100000;99928;0;72;false;nao_concluido
+Dynamic Programming;dificil;25;8;367,194;241260512;100000;100000;99928;0;72;false;nao_concluido
+Dynamic Programming;dificil;25;9;359,847;262522528;100000;100000;99928;0;72;false;nao_concluido
+Dynamic Programming;dificil;25;10;331,201;231729912;100000;100000;99928;0;72;false;nao_concluido
